@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - OpsVantage Digital</title>
+    <meta name="description" content="Get in touch with OpsVantage Digital. Contact our team of experts to discuss your digital transformation needs and start your project today.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <i class="fas fa-rocket"></i>
+                <span>OpsVantage Digital</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero section" id="contact">
+            <div class="container">
+                <div class="contact-hero__container">
+                    <h1 class="contact-hero__title">
+                        Let's Start Your <span class="hero__title-gradient">Digital Journey</span>
+                    </h1>
+                    <p class="contact-hero__description">
+                        Ready to transform your business? Get in touch with our team of experts to discuss your project and discover how we can help you achieve your goals.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info Section -->
+        <section class="contact-main section">
+            <div class="container">
+                <div class="contact-main__container grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form__container">
+                        <h2 class="contact-form__title">Send Us a Message</h2>
+                        <p class="contact-form__subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+                        
+                        <form class="contact-form" id="contact-form" onsubmit="handleContactForm(event)">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form__input" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form__input" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="company" class="form__label">Company</label>
+                                <input type="text" id="company" name="company" class="form__input">
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form__input">
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="service" class="form__label">Service Interested In</label>
+                                <select id="service" name="service" class="form__select">
+                                    <option value="">Select a service</option>
+                                    <option value="cloud-solutions">Cloud Solutions</option>
+                                    <option value="digital-transformation">Digital Transformation</option>
+                                    <option value="custom-development">Custom Development</option>
+                                    <option value="data-analytics">Data & Analytics</option>
+                                    <option value="cybersecurity">Cybersecurity</option>
+                                    <option value="technology-consulting">Technology Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="budget" class="form__label">Project Budget Range</label>
+                                <select id="budget" name="budget" class="form__select">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-10k">Under $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="over-100k">Over $100,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="message" class="form__label">Project Description *</label>
+                                <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Tell us about your project, goals, and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <div class="form__group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form__checkbox">
+                                <label for="newsletter" class="form__checkbox-label">
+                                    I'd like to receive updates about OpsVantage Digital services and industry insights
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="button button--primary form__submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info__container">
+                        <h2 class="contact-info__title">Get in Touch</h2>
+                        <p class="contact-info__subtitle">We're here to help you succeed. Reach out through any of these channels.</p>
+                        
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info__content">
+                                <h3 class="contact-info__label">Email Us</h3>
+                                <p class="contact-info__value">hello@opsvantage.digital</p>
+                                <p class="contact-info__description">We respond within 4 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info__content">
+                                <h3 class="contact-info__label">Call Us</h3>
+                                <p class="contact-info__value">+1 (555) 123-4567</p>
+                                <p class="contact-info__description">Mon - Fri, 9AM - 6PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info__content">
+                                <h3 class="contact-info__label">Visit Us</h3>
+                                <p class="contact-info__value">Digital Innovation Hub<br>
+                                123 Tech Street, Suite 456<br>
+                                Silicon Valley, CA 94000</p>
+                                <p class="contact-info__description">By appointment only</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info__content">
+                                <h3 class="contact-info__label">Business Hours</h3>
+                                <p class="contact-info__value">
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                    Saturday: 10:00 AM - 4:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <h3 class="contact-social__title">Follow Us</h3>
+                            <div class="contact-social__links">
+                                <a href="#" class="contact-social__link" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="contact-social__link" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="contact-social__link" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="contact-social__link" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq section">
+            <div class="container">
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                <p class="section__subtitle">Quick answers to common questions</p>
+                
+                <div class="faq__container grid">
+                    <div class="faq__item">
+                        <div class="faq__question" onclick="toggleFaq(this)">
+                            <h3>How long does a typical project take?</h3>
+                            <i class="fas fa-plus faq__icon"></i>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Project timelines vary based on scope and complexity. Small projects typically take 2-4 weeks, medium projects 1-3 months, and large enterprise solutions 3-6 months. We provide detailed timelines during the planning phase.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question" onclick="toggleFaq(this)">
+                            <h3>What technologies do you work with?</h3>
+                            <i class="fas fa-plus faq__icon"></i>
+                        </div>
+                        <div class="faq__answer">
+                            <p>We work with a wide range of modern technologies including cloud platforms (AWS, Azure, GCP), programming languages (JavaScript, Python, Java, .NET), databases (SQL, NoSQL), and emerging technologies like AI/ML and IoT.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question" onclick="toggleFaq(this)">
+                            <h3>Do you provide ongoing support after project completion?</h3>
+                            <i class="fas fa-plus faq__icon"></i>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Yes, we offer comprehensive support and maintenance packages including 24/7 monitoring, regular updates, security patches, and technical support to ensure your solution continues to perform optimally.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question" onclick="toggleFaq(this)">
+                            <h3>Can you work with our existing systems?</h3>
+                            <i class="fas fa-plus faq__icon"></i>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Absolutely. We specialize in system integration and can work with your existing infrastructure to ensure seamless compatibility and minimal disruption to your current operations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question" onclick="toggleFaq(this)">
+                            <h3>What is your pricing model?</h3>
+                            <i class="fas fa-plus faq__icon"></i>
+                        </div>
+                        <div class="faq__answer">
+                            <p>We offer flexible pricing models including fixed-price projects, time and materials, and retainer-based arrangements. Pricing depends on project scope, complexity, and timeline. We provide transparent estimates with no hidden costs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question" onclick="toggleFaq(this)">
+                            <h3>How do you ensure project quality?</h3>
+                            <i class="fas fa-plus faq__icon"></i>
+                        </div>
+                        <div class="faq__answer">
+                            <p>We follow industry best practices including agile development methodologies, automated testing, code reviews, and continuous integration. Regular client communication and milestone reviews ensure quality and alignment throughout the project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>OpsVantage Digital</span>
+                </div>
+                <p class="footer__description">
+                    Empowering businesses through innovative digital solutions and operational excellence.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__content">
+                <h4 class="footer__title">Quick Links</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html" class="footer__link">Home</a></li>
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                    <li><a href="services.html" class="footer__link">Services</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h4 class="footer__title">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="services.html" class="footer__link">Cloud Solutions</a></li>
+                    <li><a href="services.html" class="footer__link">Digital Transformation</a></li>
+                    <li><a href="services.html" class="footer__link">Custom Development</a></li>
+                    <li><a href="services.html" class="footer__link">Consulting</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h4 class="footer__title">Contact Info</h4>
+                <ul class="footer__links">
+                    <li class="footer__info">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@opsvantage.digital</span>
+                    </li>
+                    <li class="footer__info">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li class="footer__info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Digital Innovation Hub</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer__copy">
+            <p>&copy; 2024 OpsVantage Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-hero {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            text-align: center;
+        }
+        
+        .contact-hero__title {
+            font-size: var(--biggest-font-size);
+            font-weight: var(--font-bold);
+            line-height: 1.1;
+            margin-bottom: var(--mb-1);
+        }
+        
+        .contact-hero__description {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--text-color);
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+        
+        .contact-main__container {
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .contact-form__container {
+            background-color: var(--container-color);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 8px 32px var(--shadow-color);
+        }
+        
+        .contact-form__title {
+            font-size: var(--h2-font-size);
+            margin-bottom: var(--mb-0-5);
+            color: var(--title-color);
+        }
+        
+        .contact-form__subtitle {
+            color: var(--text-color);
+            margin-bottom: var(--mb-2);
+        }
+        
+        .form__group {
+            margin-bottom: var(--mb-1-5);
+        }
+        
+        .form__label {
+            display: block;
+            font-weight: var(--font-medium);
+            color: var(--title-color);
+            margin-bottom: var(--mb-0-5);
+        }
+        
+        .form__input,
+        .form__select,
+        .form__textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            color: var(--text-color);
+            transition: border-color 0.3s ease;
+        }
+        
+        .form__input:focus,
+        .form__select:focus,
+        .form__textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form__textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .form__checkbox {
+            margin-top: 0.25rem;
+        }
+        
+        .form__checkbox-label {
+            font-size: var(--small-font-size);
+            color: var(--text-color);
+            line-height: 1.5;
+            cursor: pointer;
+        }
+        
+        .form__submit {
+            width: 100%;
+            justify-content: center;
+            margin-top: var(--mb-1);
+        }
+        
+        .contact-info__container {
+            background-color: var(--container-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px var(--shadow-color);
+            height: fit-content;
+        }
+        
+        .contact-info__title {
+            font-size: var(--h2-font-size);
+            margin-bottom: var(--mb-0-5);
+            color: var(--title-color);
+        }
+        
+        .contact-info__subtitle {
+            color: var(--text-color);
+            margin-bottom: var(--mb-2);
+        }
+        
+        .contact-info__item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: var(--mb-2);
+            padding-bottom: var(--mb-1-5);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .contact-info__item:last-child {
+            border-bottom: none;
+            margin-bottom: var(--mb-1);
+        }
+        
+        .contact-info__icon {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(37, 99, 235, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .contact-info__label {
+            font-size: var(--h3-font-size);
+            font-weight: var(--font-medium);
+            color: var(--title-color);
+            margin-bottom: var(--mb-0-25);
+        }
+        
+        .contact-info__value {
+            color: var(--text-color);
+            margin-bottom: var(--mb-0-25);
+        }
+        
+        .contact-info__description {
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+        }
+        
+        .contact-social__title {
+            font-size: var(--h3-font-size);
+            margin-bottom: var(--mb-1);
+            color: var(--title-color);
+        }
+        
+        .contact-social__links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .contact-social__link {
+            width: 45px;
+            height: 45px;
+            background-color: rgba(37, 99, 235, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-social__link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .faq {
+            background-color: #f8fafc;
+        }
+        
+        .faq__container {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq__item {
+            background-color: var(--container-color);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--shadow-color);
+        }
+        
+        .faq__question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq__question:hover {
+            background-color: #f8fafc;
+        }
+        
+        .faq__question h3 {
+            font-size: var(--h3-font-size);
+            color: var(--title-color);
+            margin: 0;
+        }
+        
+        .faq__icon {
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq__answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq__answer.active {
+            max-height: 200px;
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .faq__question.active .faq__icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq__answer p {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        /* Notifications */
+        .notification {
+            animation: slideInRight 0.3s ease;
+        }
+        
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .notification__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        
+        .notification__close {
+            background: none;
+            border: none;
+            color: inherit;
+            font-size: 1.125rem;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .notification__close:hover {
+            opacity: 1;
+        }
+        
+        /* Responsive */
+        @media screen and (max-width: 992px) {
+            .contact-main__container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .contact-form__container,
+            .contact-info__container {
+                padding: 2rem;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .contact-form__container,
+            .contact-info__container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    
+    <script>
+        // FAQ Toggle Functionality
+        function toggleFaq(element) {
+            const faqItem = element.parentNode;
+            const answer = faqItem.querySelector('.faq__answer');
+            const icon = element.querySelector('.faq__icon');
+            
+            // Close all other FAQs
+            const allFaqItems = document.querySelectorAll('.faq__item');
+            allFaqItems.forEach(item => {
+                if (item !== faqItem) {
+                    const otherAnswer = item.querySelector('.faq__answer');
+                    const otherQuestion = item.querySelector('.faq__question');
+                    otherAnswer.classList.remove('active');
+                    otherQuestion.classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
