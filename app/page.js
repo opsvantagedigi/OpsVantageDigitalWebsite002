@@ -1,6 +1,4 @@
 import dynamic from 'next/dynamic'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import BentoGrid from '../components/BentoGrid'
 import MagneticButton from '../components/MagneticButton'
 import MarqueeLogos from '../components/MarqueeLogos'
@@ -11,36 +9,32 @@ const HeroR3F = dynamic(() => import('../components/HeroR3F'), { ssr: false })
 export default function Page() {
   return (
     <>
-      <Header />
-      <main>
-        <section>
-          <HeroR3F />
-        </section>
+      <section aria-label="Hero">
+        <HeroR3F />
+      </section>
 
-        <section className="py-12">
-          <div className="ovd-container">
-            <h2 className="section__title">What We Build</h2>
-            <p className="section__subtitle">Productized systems that scale revenue, reduce churn, and optimize delivery.</p>
-            <BentoGrid />
-          </div>
-        </section>
+      <section className="py-12">
+        <div className="container mx-auto px-6">
+          <h2 className="text-2xl font-semibold">What We Build</h2>
+          <p className="text-gray-600">Productized systems that scale revenue, reduce churn, and optimize delivery.</p>
+          <div className="mt-6"><BentoGrid /></div>
+        </div>
+      </section>
 
-        <section className="py-8">
-          <div className="ovd-container">
-            <Counters />
-            <div className="mt-8 text-center">
-              <MagneticButton>Get a Revenue Readout</MagneticButton>
-            </div>
+      <section className="py-8">
+        <div className="container mx-auto px-6">
+          <Counters />
+          <div className="mt-8 text-center">
+            <MagneticButton>Get a Revenue Readout</MagneticButton>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="py-8">
-          <div className="ovd-container">
-            <MarqueeLogos />
-          </div>
-        </section>
-      </main>
-      <Footer />
+      <section className="py-8">
+        <div className="container mx-auto px-6">
+          <MarqueeLogos />
+        </div>
+      </section>
     </>
   )
 }
