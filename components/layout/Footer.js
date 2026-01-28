@@ -1,15 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import icon from '../../assets/icon.png'
+import logo from '../../assets/logo.png'
 
 export default function Footer(){
   return (
     <footer className="site-footer">
       <div className="container py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <div className="inline-flex items-center gap-3">
-            <Image src="/assets/icon.png" alt="OpsVantage icon" width={28} height={28} />
-            <Image src="/assets/logo.png" alt="OpsVantage logo" width={140} height={36} />
+            <div className="inline-flex items-center gap-3">
+            <Image src={icon} alt="OpsVantage icon" width={28} height={28} />
+            <Image src={logo} alt="OpsVantage logo" width={140} height={36} />
           </div>
           <p className="mt-3 text-sm text-muted-2">Revenue acceleration infrastructure for growth-focused teams.</p>
           <p className="mt-4 text-xs text-muted-2">© {new Date().getFullYear()} OpsVantage Digital</p>

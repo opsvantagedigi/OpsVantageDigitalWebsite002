@@ -7,6 +7,12 @@ export const metadata = {
   description: 'Productized systems that scale predictable revenue for B2B SaaS and service businesses.',
 }
 
+// Provide favicon/icon metadata so browsers and crawlers see the correct file
+export const icons = {
+  icon: '/favicon.svg',
+  shortcut: '/favicon.svg',
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

@@ -5,7 +5,7 @@ export default function Header(){
     <header className="ovd-header" id="header">
       <div className="container">
         <div className="nav__logo">
-          <img src="/assets/logo.png" alt="logo" style={{height:24}} />
+          <img src="/logo.png" alt="logo" style={{height:24}} />
           <span className="brand-text">OpsVantage</span>
         </div>
         <nav className="nav">

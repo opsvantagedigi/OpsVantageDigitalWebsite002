@@ -2,6 +2,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import icon from '../../assets/icon.png'
+import logo from '../../assets/logo.png'
 
 export default function Header(){
   const [servicesOpen, setServicesOpen] = useState(false)
@@ -29,8 +31,8 @@ export default function Header(){
         <div className="logo-container">
           <Link href="/" aria-label="Home">
             <div className="inline-flex items-center gap-3">
-              <Image src="/assets/icon.png" alt="OpsVantage icon" width={28} height={28} className="logo-icon" />
-              <Image src="/assets/logo.png" alt="OpsVantage logo" width={140} height={36} className="logo-image" />
+              <Image src={icon} alt="OpsVantage icon" width={28} height={28} className="logo-icon" />
+              <Image src={logo} alt="OpsVantage logo" width={140} height={36} className="logo-image" />
             </div>
           </Link>
         </div>
