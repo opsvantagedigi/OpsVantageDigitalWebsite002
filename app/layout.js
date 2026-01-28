@@ -1,5 +1,4 @@
 import './globals.css'
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 
@@ -13,8 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        {/* Speed Insights component imported for integration; render where appropriate in production */}
-        {/* <SpeedInsights /> */}
+        {/* Speed Insights integration removed to avoid build-time module error. Re-add after installing @vercel/speed-insights/next or using dynamic import. */}
         <main>
           {children}
         </main>
