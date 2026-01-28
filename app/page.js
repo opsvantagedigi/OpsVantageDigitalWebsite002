@@ -1,17 +1,14 @@
-import dynamic from 'next/dynamic'
+import Hero from '../components/Hero'
 import BentoGrid from '../components/BentoGrid'
-import MagneticButton from '../components/MagneticButton'
-import MarqueeLogos from '../components/MarqueeLogos'
 import Counters from '../components/Counters'
-
-const HeroR3F = dynamic(() => import('../components/HeroR3F'), { ssr: false })
+import MarqueeLogos from '../components/MarqueeLogos'
+import ProcessSnapshot from '../components/ProcessSnapshot'
+import InsightsPreview from '../components/InsightsPreview'
 
 export default function Page() {
   return (
     <>
-      <section aria-label="Hero">
-        <HeroR3F />
-      </section>
+      <Hero />
 
       <section className="py-12">
         <div className="container mx-auto px-6">
@@ -21,12 +18,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-8">
+      <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6">
           <Counters />
-          <div className="mt-8 text-center">
-            <MagneticButton>Get a Revenue Readout</MagneticButton>
-          </div>
         </div>
       </section>
 
@@ -35,6 +29,10 @@ export default function Page() {
           <MarqueeLogos />
         </div>
       </section>
+
+      <ProcessSnapshot />
+
+      <InsightsPreview />
     </>
   )
 }
