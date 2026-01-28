@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { cn } from '../../lib/cn'
 
 export function NavigationMenu({ children, className }){
@@ -11,9 +12,9 @@ export function NavigationMenu({ children, className }){
 
 export function NavigationMenuItem({ href, children, className }){
   return (
-    <a href={href} className={cn('text-sm font-medium text-gray-800 hover:text-primary px-2 py-1', className)}>
+    <Link href={href} className={cn('text-sm font-medium text-gray-800 hover:text-primary px-2 py-1', className)}>
       {children}
-    </a>
+    </Link>
   )
 }
 
