@@ -105,7 +105,10 @@ export default function Hero() {
         <div className="relative w-full max-w-md shrink-0 md:max-w-lg">
           <div className="pointer-events-none absolute inset-0 -z-10 rounded-[2.25rem] bg-gradient-to-br from-sky-500/20 via-emerald-400/10 to-amber-300/15 blur-3xl" />
           <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-slate-950/70 shadow-[0_0_80px_rgba(15,23,42,0.9)] backdrop-blur">
-            <HeroScene />
+            {/* TEMP: disable 3D scene for hydration triage */}
+            <div className="h-[260px] w-full rounded-[2rem] border border-white/8 bg-slate-900/70 md:h-[320px] lg:h-[360px] flex items-center justify-center text-xs text-slate-400">
+              3D scene temporarily disabled for diagnostics.
+            </div>
           </div>
           <div className="mt-3 flex items-center justify-between text-[11px] text-slate-400">
             <span>OpenProvider‑powered domains, SSL, email &amp; DNS.</span>
