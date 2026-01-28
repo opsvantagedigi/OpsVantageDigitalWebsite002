@@ -5,7 +5,7 @@
 @import "../branding/components.css";
 @import "../branding/header.css";
 @import "../branding/footer.css";
-@import "../assets/css/style.css";
+@import "../branding/style.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

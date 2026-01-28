@@ -108,7 +108,7 @@ HTML
 <header class="ovd-header">
   <div class="container header-inner">
     <div class="brand">
-      <img src="/assets/logo.png" alt="OpsVantage Digital Logo" class="brand-icon">
+      <img src="/logo.png" alt="OpsVantage Digital Logo" class="brand-icon">
       <span class="brand-text">OpsVantage Digital</span>
     </div>
     <nav class="nav">

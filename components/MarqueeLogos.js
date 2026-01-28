@@ -8,7 +8,7 @@ export default function MarqueeLogos(){
     <div className="overflow-hidden">
       <div className="marquee flex gap-8 items-center">
         {[...logos, ...logos].map((l,i)=> (
-          <img key={i} src={l} alt="client" className="h-12 opacity-80 grayscale" />
+          <img key={i} src={l} alt={`Client logo ${i+1}`} width={56} height={48} className="h-12 opacity-80 grayscale" />
         ))}
       </div>
       <style jsx>{`
