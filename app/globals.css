@@ -2,18 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
+:root{
+  --ovd-blue: #0033A0;
+  --ovd-green: #00A676;
+  --ovd-yellow: #F2C94C;
+  --ovd-midnight: #0A0F1F;
+  --ovd-purple: #6A0DAD;
+  --ovd-slate: #1C2333;
+  --ovd-light: #F5F7FA;
+  --ovd-grey: #A7A9AC;
+
+  --font-heading: 'Orbitron', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+
+  --container-max: 1200px;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  height:100%;
 }
 
 body {
-  @apply bg-ovd-midnight text-ovd-light font-body antialiased;
+  background: var(--ovd-midnight);
+  color: var(--ovd-light);
+  font-family: var(--font-body);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-main {
-  @apply min-h-screen;
+main{min-height:100vh}
+
+.container{max-width:var(--container-max);margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+
+/* Headings */
+h1,h2,h3,h4{color:var(--ovd-light);font-family:var(--font-heading)}
+h1{font-size:2.25rem;line-height:1.05}
+h2{font-size:1.5rem;line-height:1.1}
+
+/* Links */
+a{color:var(--ovd-green);text-decoration:underline dotted;color:var(--ovd-green)}
+
+/* Utility spacing helpers */
+.sp-1{padding:0.25rem}
+.sp-2{padding:0.5rem}
+.sp-3{padding:1rem}
+.sp-4{padding:2rem}
+
+/* Buttons fallback */
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:0.5rem 1rem}
+
+/* Motion safe */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms!important;transition-duration:0.001ms!important}
 }
 
-.container {
-  @apply max-w-6xl mx-auto px-4;
-}
+/* Utility: subtle divider */
+.ovd-divider{height:1px;background:rgba(255,255,255,0.04);width:100%}
