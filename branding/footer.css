@@ -1,8 +1,26 @@
 .ovd-footer {
-  background: var(--ovd-slate);
-  padding: var(--space-lg) 0;
-  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--footer-height);
+  z-index: calc(var(--z-fixed) - 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border-top: 1px solid rgba(255,255,255,0.06);
   color: var(--ovd-grey);
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  padding: 0 var(--space-md);
+}
+
+.ovd-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
 }

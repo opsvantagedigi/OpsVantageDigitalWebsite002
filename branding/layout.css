@@ -28,4 +28,11 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --header-height: 3.5rem;
+  --footer-height: 4.5rem;
+}
+
+/* Keep content visible when header/footer are fixed */
+body {
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
 }

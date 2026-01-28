@@ -44,8 +44,13 @@ window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
-    const nav = document.getElementById('header')
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+    const nav = document.getElementById('header') || document.querySelector('.ovd-header') || document.querySelector('.header')
+    if (!nav) return;
+    if (this.scrollY >= 80) {
+        nav.classList.add('scroll-header')
+    } else {
+        nav.classList.remove('scroll-header')
+    }
 }
 window.addEventListener('scroll', scrollHeader)
 
