@@ -1,0 +1,21 @@
+{
+  "name": "opsvantage-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "next": "13.4.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "framer-motion": "10.12.16",
+    "three": "0.165.0",
+    "@react-three/fiber": "8.13.9",
+    "gsap": "3.12.2",
+    "react-countup": "9.3.0",
+    "react-hot-toast": "2.4.0"
+  }
+}
