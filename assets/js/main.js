@@ -1,8 +1,8 @@
 /*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-          nav = document.getElementById(navId)
-    
+    const toggle = document.getElementById(toggleId) || document.querySelector('.nav__toggle') || document.querySelector('.nav-toggle'),
+          nav = document.getElementById(navId) || document.querySelector('.nav')
+
     if(toggle && nav){
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show-menu')
@@ -12,11 +12,11 @@ const showMenu = (toggleId, navId) => {
 showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav__link, .nav a')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
+    const navMenu = document.getElementById('nav-menu') || document.querySelector('.nav')
+    if(navMenu) navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -32,9 +32,11 @@ function scrollActive(){
         const sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            const link = document.querySelector('.nav__menu a[href*=' + sectionId + ']') || document.querySelector('.nav a[href*=' + sectionId + ']')
+            if(link) link.classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            const link = document.querySelector('.nav__menu a[href*=' + sectionId + ']') || document.querySelector('.nav a[href*=' + sectionId + ']')
+            if(link) link.classList.remove('active-link')
         }
     })
 }

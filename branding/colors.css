@@ -23,3 +23,20 @@ Gradient	Buttons, titles, borders	Never for long paragraphs
 Yellow	Warnings, highlights	Never as background with white text
 Green	Success states	Avoid pairing with yellow text
 */
+
+/* Compatibility aliases for existing site variables */
+:root {
+  --primary-color: var(--ovd-blue);
+  --primary-color-alt: var(--ovd-midnight);
+  --secondary-color: var(--ovd-yellow);
+  --secondary-color-alt: var(--ovd-green);
+  --title-color: var(--ovd-midnight);
+  --text-color: var(--ovd-slate);
+  --text-color-light: var(--ovd-grey);
+  --border-color: rgba(0,0,0,0.04);
+  --body-color: var(--ovd-light);
+  --container-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --gradient: var(--ovd-gradient);
+}
+
