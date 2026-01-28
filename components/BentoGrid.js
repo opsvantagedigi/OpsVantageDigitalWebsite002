@@ -25,10 +25,10 @@ export default function BentoGrid(){
   return (
     <motion.div className="grid gap-6" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', marginTop:'1.5rem'}} variants={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.15}}>
       {items.map((it, i) => (
-        <motion.article key={i} className="bg-ovd-slate/80 border border-transparent rounded-md p-5 shadow-ovd-sm hover:shadow-ovd-md transform-gpu" variants={card} whileHover={{ scale: 1.03 }}>
+        <motion.article key={i} className="card-surface border-transparent p-5 rounded-md transform-gpu" variants={card} whileHover={{ scale: 1.03 }}>
           <div className="text-2xl">🔹</div>
           <h3 className="mt-3 text-lg font-semibold">{it.title}</h3>
-          <p className="mt-2 text-sm text-gray-300">{it.body}</p>
+          <p className="mt-2 text-sm text-muted-2">{it.body}</p>
         </motion.article>
       ))}
     </motion.div>

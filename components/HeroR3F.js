@@ -22,7 +22,7 @@ export default function HeroR3F(){
           <p className="hero__description">We build productized systems that scale predictable revenue for B2B SaaS and services companies.</p>
         </div>
         <div className="hero__image">
-          <div style={{width:360, height:260}}>
+              <div className="hero-3d-size">
             <Canvas camera={{ position: [0, 0, 6] }}>
               <ambientLight intensity={0.8} />
               <directionalLight position={[5,5,5]} />

@@ -10,22 +10,22 @@ export default function Page() {
     <>
       <Hero />
 
-      <section className="py-12">
-        <div className="container mx-auto px-6">
+      <section className="section">
+        <div className="container">
           <h2 className="text-2xl font-semibold">What We Build</h2>
-          <p className="text-gray-600">Productized systems that scale revenue, reduce churn, and optimize delivery.</p>
+          <p className="text-muted-2">Productized systems that scale revenue, reduce churn, and optimize delivery.</p>
           <div className="mt-6"><BentoGrid /></div>
         </div>
       </section>
 
-      <section className="py-8 bg-gray-900">
-        <div className="container mx-auto px-6">
+      <section className="section">
+        <div className="container">
           <Counters />
         </div>
       </section>
 
-      <section className="py-8">
-        <div className="container mx-auto px-6">
+      <section className="section">
+        <div className="container">
           <MarqueeLogos />
         </div>
       </section>

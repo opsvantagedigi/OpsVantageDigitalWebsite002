@@ -1,42 +1,76 @@
-import React from 'react'
+"use client"
+import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { NavigationMenu, NavigationMenuItem, NavigationMenuDropdown } from '../ui'
+import Image from 'next/image'
 
 export default function Header(){
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const servicesRef = useRef(null)
+
+  useEffect(()=>{
+    function onDoc(e){
+      if(!servicesRef.current) return
+      if(servicesRef.current.contains(e.target)) return
+      setServicesOpen(false)
+    }
+    function onKey(e){ if(e.key === 'Escape') setServicesOpen(false) }
+    document.addEventListener('click', onDoc)
+    document.addEventListener('keydown', onKey)
+    return ()=>{
+      document.removeEventListener('click', onDoc)
+      document.removeEventListener('keydown', onKey)
+    }
+  },[])
+
   return (
-    <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b">
-      <div className="container mx-auto px-6 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <Link href="/" className="inline-flex items-center gap-2 no-underline">
-            <span className="text-2xl font-extrabold bg-clip-text text-transparent" style={{backgroundImage: 'linear-gradient(90deg,#6ee7b7,#60a5fa)'}}>OpsVantage</span>
+    <header className="fixed-header" role="banner">
+      <div className="container flex items-center justify-between py-3">
+        <div className="logo-container">
+          <Link href="/" aria-label="Home">
+            <div className="inline-flex items-center gap-3">
+              <Image src="/assets/icon.png" alt="OpsVantage icon" width={28} height={28} className="logo-icon" />
+              <Image src="/assets/logo.png" alt="OpsVantage logo" width={140} height={36} className="logo-image" />
+            </div>
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
-          <NavigationMenu>
-            <NavigationMenuItem href="/marketing/services">Services</NavigationMenuItem>
-            <NavigationMenuItem href="/marketing/work">Work</NavigationMenuItem>
-            <NavigationMenuItem href="/marketing/insights">Insights</NavigationMenuItem>
-            <NavigationMenuItem href="/marketing/about">About</NavigationMenuItem>
-          </NavigationMenu>
-          <Link href="/marketing/contact" className="inline-flex">
-            <span className="inline-flex items-center justify-center rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-primary text-white hover:brightness-95 px-4 py-2">Contact</span>
-          </Link>
-        </div>
+        <nav className="main-nav hidden md:block" role="navigation" aria-label="Primary">
+          <ul className="flex items-center nav-gap">
+            <li><Link href="/">Home</Link></li>
+            <li ref={servicesRef} onMouseEnter={()=>setServicesOpen(true)} onMouseLeave={()=>setServicesOpen(false)}>
+              <button aria-haspopup="true" aria-expanded={servicesOpen} onClick={()=>setServicesOpen((v)=>!v)} onKeyDown={(e)=>{ if(e.key==='Escape') setServicesOpen(false) }} className="text-muted-2">Services</button>
+              <ul className={`dropdown-menu ${servicesOpen ? 'open' : ''}`} role="menu">
+                <li role="none"><Link href="/marketing/services">Advisory & Ops</Link></li>
+                <li role="none"><Link href="/marketing/work">Case Studies</Link></li>
+                <li role="none"><Link href="/marketing/insights">Insights</Link></li>
+              </ul>
+            </li>
+            <li className="ml-6"><Link href="/marketing/about">About</Link></li>
+            <li className="ml-6"><Link href="/marketing/contact">Contact</Link></li>
+          </ul>
+        </nav>
 
         <div className="md:hidden">
-          <details className="relative">
-            <summary className="p-2 rounded-md">Menu</summary>
-            <div className="absolute right-0 mt-2 w-48 rounded-md border bg-white shadow-lg p-2">
-              <nav className="flex flex-col gap-2">
-                <Link href="/marketing/services" className="px-2 py-1">Services</Link>
-                <Link href="/marketing/work" className="px-2 py-1">Work</Link>
-                <Link href="/marketing/insights" className="px-2 py-1">Insights</Link>
-                <Link href="/marketing/about" className="px-2 py-1">About</Link>
-                <Link href="/marketing/contact" className="px-2 py-1">Contact</Link>
-              </nav>
-            </div>
-          </details>
+          <button aria-expanded={mobileOpen} aria-controls="mobile-menu" onClick={()=>setMobileOpen(v=>!v)} className="p-2 rounded-md text-muted-2">Menu</button>
+        </div>
+
+        <div id="mobile-menu" className={`mobile-panel ${mobileOpen ? 'open' : ''}`} aria-hidden={!mobileOpen}>
+          <div className="card-surface p-4 mobile-panel-inner">
+            <nav className="flex flex-col gap-3">
+              <Link href="/">Home</Link>
+              <details>
+                <summary>Services</summary>
+                <div className="flex flex-col pl-4">
+                  <Link href="/marketing/services">Advisory & Ops</Link>
+                  <Link href="/marketing/work">Case Studies</Link>
+                  <Link href="/marketing/insights">Insights</Link>
+                </div>
+              </details>
+              <Link href="/marketing/about">About</Link>
+              <Link href="/marketing/contact">Contact</Link>
+            </nav>
+          </div>
         </div>
       </div>
     </header>

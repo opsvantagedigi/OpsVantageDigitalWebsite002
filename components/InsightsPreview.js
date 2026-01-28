@@ -10,17 +10,17 @@ const posts = [
 
 export default function InsightsPreview(){
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-6">
+    <section className="section">
+      <div className="container">
         <h2 className="text-2xl font-semibold">Insights</h2>
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {posts.map((p)=> (
-            <Card key={p.slug} className="bg-ovd-slate/70">
+            <Card key={p.slug} className="card-surface">
               <CardHeader>
                 <CardTitle>{p.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-300">A short preview of the insight to invite curiosity and action.</p>
+                <p className="text-sm text-muted-2">A short preview of the insight to invite curiosity and action.</p>
                 <div className="mt-4">
                   <Link href={`/marketing/insights/${p.slug}`} className="text-sm text-ovd-green">Read →</Link>
                 </div>

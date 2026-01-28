@@ -47,9 +47,9 @@ export default function Counters(){
       {stats.map((s,i)=>{
         const val = useCountTo(s.value, 1600, visible)
         return (
-          <div key={i} className="p-4 bg-ovd-slate/60 rounded-md">
+          <div key={i} className="p-4 card-surface rounded-md">
             <div className="text-3xl font-extrabold">{val}{s.suffix || ''}</div>
-            <div className="mt-2 text-sm text-gray-300">{s.label}</div>
+            <div className="mt-2 text-sm text-muted-2">{s.label}</div>
           </div>
         )
       })}
