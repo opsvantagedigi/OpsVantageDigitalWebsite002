@@ -1,69 +1,7 @@
 /* ===== GOOGLE FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ===== CSS VARIABLES ===== */
-:root {
-  --header-height: 3.5rem;
-
-  /* ===== Colors ===== */
-  --primary-color: #2563eb;
-  --primary-color-alt: #1e40af;
-  --secondary-color: #f59e0b;
-  --secondary-color-alt: #d97706;
-  --title-color: #1f2937;
-  --text-color: #6b7280;
-  --text-color-light: #9ca3af;
-  --border-color: #e5e7eb;
-  --body-color: #ffffff;
-  --container-color: #ffffff;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-
-  /* ===== Font and Typography ===== */
-  --body-font: 'Inter', sans-serif;
-  --biggest-font-size: 2.75rem;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.875rem;
-  --h3-font-size: 1.5rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
-
-  /* ===== Font Weight ===== */
-  --font-light: 300;
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
-  --font-bold: 700;
-
-  /* ===== Margins Bottom ===== */
-  --mb-0-25: 0.25rem;
-  --mb-0-5: 0.5rem;
-  --mb-0-75: 0.75rem;
-  --mb-1: 1rem;
-  --mb-1-25: 1.25rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
-  --mb-3: 3rem;
-
-  /* ===== Z Index ===== */
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
-/* ===== RESPONSIVE TYPOGRAPHY ===== */
-@media screen and (max-width: 992px) {
-  :root {
-    --biggest-font-size: 2.25rem;
-    --h1-font-size: 1.875rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-  }
-}
+/* Branding variables moved to /branding/*. Keep only layout/utility vars here if needed. */
 
 /* ===== BASE ===== */
 * {
@@ -116,11 +54,7 @@ button {
 
 /* ===== REUSABLE CSS CLASSES ===== */
 .container {
-  max-width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* container now defined by /branding/layout.css */
 }
 
 .grid {

@@ -1,0 +1,25 @@
+:root {
+  --ovd-blue: #0033A0;
+  --ovd-green: #00A676;
+  --ovd-yellow: #F2C94C;
+
+  --ovd-gradient: linear-gradient(90deg, var(--ovd-blue), var(--ovd-green), var(--ovd-yellow));
+}
+
+:root {
+  --ovd-midnight: #0A0F1F;   /* Primary favourite */
+  --ovd-purple: #6A0DAD;     /* Secondary favourite */
+  --ovd-slate: #1C2333;
+  --ovd-light: #F5F7FA;
+  --ovd-grey: #A7A9AC;
+}
+
+/* Usage rules (guidance only) */
+/*
+Color	Use	Avoid
+Midnight Blue	Backgrounds, hero, footer	Never for body text
+Purple	Highlights, MARZ UI	Never as full background
+Gradient	Buttons, titles, borders	Never for long paragraphs
+Yellow	Warnings, highlights	Never as background with white text
+Green	Success states	Avoid pairing with yellow text
+*/

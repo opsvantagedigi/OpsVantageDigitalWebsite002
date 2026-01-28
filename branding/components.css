@@ -1,0 +1,31 @@
+.btn-primary {
+  background: var(--ovd-gradient);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 6px;
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.ovd-card {
+  background: var(--ovd-midnight);
+  padding: var(--space-lg);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+  color: var(--ovd-light);
+}
+
+.ovd-input {
+  width: 100%;
+  padding: var(--space-md);
+  border-radius: 6px;
+  border: 1px solid var(--ovd-grey);
+  background: #fff;
+  font-family: var(--font-body);
+}

@@ -1,0 +1,23 @@
+.ovd-header {
+  background: var(--ovd-midnight);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.brand-text {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  background: var(--ovd-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav a {
+  color: var(--ovd-light);
+  margin-left: var(--space-lg);
+  font-family: var(--font-body);
+  transition: 0.3s ease;
+}
+.nav a:hover {
+  color: var(--ovd-yellow);
+}
