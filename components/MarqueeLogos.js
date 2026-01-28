@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 
 const logos = ['/assets/logo.png','/assets/icon.png','/assets/logo.png','/assets/icon.png']
