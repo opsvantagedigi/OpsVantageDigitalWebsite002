@@ -1,13 +1,9 @@
-import * as Sentry from "@sentry/nextjs";
-
-export async function register() {
-  if (process.env.NEXT_RUNTIME === "nodejs") {
-    await import("./sentry.server.config");
-  }
-
-  if (process.env.NEXT_RUNTIME === "edge") {
-    await import("./sentry.edge.config");
-  }
+// Optional, safe instrumentation entrypoint — no-op by default.
+export function register() {
+  // Intentionally empty. Import and register instrumentation only when
+  // explicitly needed to avoid any runtime side-effects during hydration.
 }
 
-export const onRequestError = Sentry.captureRequestError;
+// Export a placeholder for potential error hooks. Keep as no-op to avoid
+// introducing runtime dependencies.
+export const onRequestError = undefined;

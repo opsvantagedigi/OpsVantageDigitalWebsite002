@@ -1,7 +1,10 @@
-import * as Sentry from '@sentry/nextjs'
+// Lightweight, safe client init — loads after hydration and is non-intrusive
+import * as Sentry from '@sentry/nextjs';
 
 Sentry.init({
-  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN || '',
+  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
   tracesSampleRate: 0.1,
-  // Adjust as needed
-})
+  replaysSessionSampleRate: 0,
+  replaysOnErrorSampleRate: 1.0,
+  // Keep client footprint small — opt-in further integrations only
+});
