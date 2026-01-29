@@ -1,5 +1,5 @@
 import React from 'react'
-import { cn } from '../../lib/cn'
+import { cn } from '../lib/cn'
 
 export default function PageShell({ title, subtitle, children, className }){
   return (

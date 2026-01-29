@@ -1,5 +1,5 @@
 import React from 'react'
-import PageShell from '../../components/layout/PageShell'
+import PageShell from '../../components/PageShell'
 
 export default function Disclaimer(){
   return (
