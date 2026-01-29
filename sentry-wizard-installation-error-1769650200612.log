@@ -1,0 +1,5 @@
+npm error code ETARGET
+npm error notarget No matching version found for @sentry/cli@^3.5.0.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: C:\Users\AjaySidal\AppData\Local\npm-cache\_logs\2026-01-29T01_29_54_307Z-debug-0.log
