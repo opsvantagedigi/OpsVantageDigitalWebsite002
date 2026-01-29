@@ -1,17 +1,9 @@
 "use client"
-import React, { useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import React from 'react'
+import dynamic from 'next/dynamic'
 
-function RotatingBox(){
-  const ref = useRef()
-  useFrame((state, delta) => (ref.current.rotation.y += delta * 0.6))
-  return (
-    <mesh ref={ref} rotation={[0.4, 0.8, 0]}>
-      <boxGeometry args={[2.2, 1.2, 0.6]} />
-      <meshStandardMaterial color="#2563eb" metalness={0.6} roughness={0.2} />
-    </mesh>
-  )
-}
+// Load the heavy R3F bundle client-side only
+const Hero3D = dynamic(() => import('./Hero3D'), { ssr: false })
 
 export default function HeroR3F(){
   return (
@@ -22,12 +14,8 @@ export default function HeroR3F(){
           <p className="hero__description">We build productized systems that scale predictable revenue for B2B SaaS and services companies.</p>
         </div>
         <div className="hero__image">
-              <div className="hero-3d-size">
-            <Canvas camera={{ position: [0, 0, 6] }}>
-              <ambientLight intensity={0.8} />
-              <directionalLight position={[5,5,5]} />
-              <RotatingBox />
-            </Canvas>
+          <div className="hero-3d-size">
+            <Hero3D />
           </div>
         </div>
       </div>
