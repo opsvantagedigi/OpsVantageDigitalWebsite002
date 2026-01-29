@@ -29,8 +29,7 @@
     "three": "0.165.0"
   },
   "devDependencies": {
-    "vercel": "^32.3.0",
-    "@sentry/cli": "^3.5.0"
+    "vercel": "^32.3.0"
   },
   "overrides": {
     "tailwindcss": "^3.4.7"
