@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
-    "build": "next build",
+    "build": "next build --webpack",
     "postbuild": "node ./scripts/sentry-postbuild.js || true",
     "start": "next start -p 3000",
     "deploy": "vercel --prod",

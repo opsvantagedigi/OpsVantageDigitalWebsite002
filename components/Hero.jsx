@@ -16,7 +16,7 @@ export default function Hero() {
     <section className="relative overflow-hidden border-b border-white/5 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-950/95">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_55%),_radial-gradient(circle_at_bottom,_rgba(251,191,36,0.16),_transparent_55%)]" />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-20 pt-24 md:flex-row md:items-center md:gap-16 md:px-6 lg:px-8 lg:pb-28 lg:pt-28">
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-20 pt-20 md:flex-row md:items-center md:gap-16 md:px-6 lg:px-8 lg:pb-28 lg:pt-24">
         {/* Left: Copy */}
         <div className="max-w-xl space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/5 px-3 py-1 text-xs font-medium text-emerald-200/90 backdrop-blur">
@@ -102,7 +102,7 @@ export default function Hero() {
         </div>
 
         {/* Right: 3D scene */}
-        <div className="relative w-full max-w-md shrink-0 md:max-w-lg">
+        <div className="relative w-full max-w-md shrink-0 md:max-w-md lg:max-w-lg">
           <div className="pointer-events-none absolute inset-0 -z-10 rounded-[2.25rem] bg-gradient-to-br from-sky-500/20 via-emerald-400/10 to-amber-300/15 blur-3xl" />
           <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-slate-950/70 shadow-[0_0_80px_rgba(15,23,42,0.9)] backdrop-blur">
             {/* TEMP: disable 3D scene for hydration triage */}

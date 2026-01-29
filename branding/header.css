@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
+  padding: 0 1rem;
 }
 
 .brand-text {
@@ -29,14 +30,49 @@
   color: transparent;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1.2vw, 1.25rem);
+  flex-wrap: nowrap;
+}
+
 .nav a {
   color: var(--ovd-light);
-  margin-left: var(--space-lg);
+  padding: 0.25rem 0.5rem; /* use padding rather than large margins to reduce wrap */
   font-family: var(--font-body);
   transition: color 0.25s ease, transform 0.25s ease;
+  white-space: nowrap;
 }
 .nav a:hover {
   color: var(--ovd-yellow);
+}
+
+/* Logo and brand adjustments */
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0; /* prevent logo from shrinking and pushing nav */
+}
+
+.nav__logo img.logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .ovd-header .container {
+    gap: 0.5rem;
+  }
+  .nav {
+    gap: 0.5rem;
+  }
+  .nav a {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.95rem;
+  }
 }
 
 /* Shrink header when scrolled */

@@ -4,14 +4,10 @@ const nextConfig = {
   // Turbopack/turbo experimental flag removed because Next.js reports
   // it as an unrecognized key in the current Next version.
 
-  // Disable Turbopack (Next.js 16 defaults to Turbopack). Explicitly
-    // set to false to force Webpack mode so Vercel builds succeed when
-    // a webpack config is present. Use the `experimental` key to avoid
-    // invalid option type errors in Next.js versions that expect an
-    // object rather than a boolean at the top-level `turbopack` key.
-    experimental: {
-      turbopack: false,
-    },
+  // NOTE: Don't include a top-level `turbopack` boolean in config —
+  // some Next.js versions validate that key as an object. Instead we
+  // force Webpack by using the build script flag `--webpack` (see
+  // updated `package.json`), and avoid adding unrecognized keys here.
 
   // Generate browser source maps for debugging and Sentry
   productionBrowserSourceMaps: true,
