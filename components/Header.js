@@ -15,10 +15,11 @@ export default function Header(){
         </div>
 
         <nav className="nav" role="navigation" aria-label="Main Navigation">
-          <a href="#services" className="nav__link">Services</a>
-          <a href="#work" className="nav__link">Work</a>
-          <a href="#about" className="nav__link">About</a>
-          <a href="#contact" className="button button--primary nav__link">Contact</a>
+          <Link href="/services" className="nav__link">Services</Link>
+          <Link href="/work" className="nav__link">Work</Link>
+          <Link href="/about" className="nav__link">About</Link>
+          <Link href="/contact" className="nav__link">Contact</Link>
+          <Link href="/insights" className="nav__link">Insights</Link>
         </nav>
       </div>
     </header>
