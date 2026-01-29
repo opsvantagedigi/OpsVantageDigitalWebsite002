@@ -32,7 +32,8 @@
     "three": "0.165.0"
   },
   "devDependencies": {
-    "vercel": "^32.3.0"
+    "source-map": "^0.7.6",
+    "vercel": "^50.9.1"
   },
   "overrides": {
     "tailwindcss": "^3.4.7"
