@@ -2,19 +2,6 @@
 // The added config here will be used whenever a users loads a page in their browser.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-import * as Sentry from "@sentry/nextjs";
-
-Sentry.init({
-  dsn: "https://9dcba0e1fa41d8c57a24735bc6cd9f97@o4510791107084288.ingest.us.sentry.io/4510791109181440",
-
-  // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
-  tracesSampleRate: 1,
-  // Enable logs to be sent to Sentry
-  enableLogs: true,
-
-  // Enable sending user PII (Personally Identifiable Information)
-  // https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/options/#sendDefaultPii
-  sendDefaultPii: true,
-});
-
-export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
+// No-op instrumentation placeholder to avoid importing @sentry/nextjs in
+// build environments where the SDK exports differ (Turbopack incompat).
+export const onRouterTransitionStart = () => {};

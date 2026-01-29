@@ -1,6 +1,11 @@
 "use client";
 
-import * as Sentry from "@sentry/nextjs";
+// Sentry client SDK removed for local builds to avoid export mismatches
+const Sentry = {
+  logger: { info: () => {} },
+  diagnoseSdkConnectivity: async () => "sentry-unreachable",
+  startSpan: async (_, fn) => await fn(),
+};
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
