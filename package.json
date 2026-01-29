@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
+    "postbuild": "node ./scripts/sentry-postbuild.js || true",
     "start": "next start -p 3000",
     "deploy": "vercel --prod"
   },
@@ -28,7 +29,8 @@
     "three": "0.165.0"
   },
   "devDependencies": {
-    "vercel": "^32.3.0"
+    "vercel": "^32.3.0",
+    "@sentry/cli": "^3.5.0"
   },
   "overrides": {
     "tailwindcss": "^3.4.7"
