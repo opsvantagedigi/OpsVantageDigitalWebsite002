@@ -5,8 +5,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   productionBrowserSourceMaps: true,
-  // Add an empty turbopack config to allow a custom webpack override
-  turbopack: {},
+  // Force Next to avoid Turbopack on Vercel and use Webpack for builds
+  experimental: {
+    turbo: false,
+  },
   webpack(config, { dev, isServer }) {
     // Force full source maps for client production bundles
     if (!dev && !isServer) {
