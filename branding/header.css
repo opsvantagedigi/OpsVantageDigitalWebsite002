@@ -39,7 +39,10 @@
 
 .nav a {
   color: var(--ovd-light);
-  padding: 0.25rem 0.5rem; /* use padding rather than large margins to reduce wrap */
+  padding: 0.5rem 0.75rem; /* larger, consistent padding to meet mobile tap targets */
+  min-height: 44px; /* ensure accessible tap target height */
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-body);
   transition: color 0.25s ease, transform 0.25s ease;
   white-space: nowrap;
