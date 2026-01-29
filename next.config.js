@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Explicitly disable Turbopack for Next.js 16+
-  turbopack: {
-    enabled: false
-  },
+  // Provide an empty Turbopack config to silence Next.js 16 warnings
+  turbopack: {},
 
   // Generate browser source maps for debugging and Sentry
   productionBrowserSourceMaps: true,
