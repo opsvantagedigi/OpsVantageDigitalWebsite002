@@ -9,7 +9,7 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "@getsentry/nextjs": "^7.53.0",
+    "@getsentry/nextjs": "^8.0.0",
     "@radix-ui/react-slot": "^1.0.6",
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "8.13.9",
