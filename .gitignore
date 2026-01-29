@@ -10,3 +10,6 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 node_modules
+
+# Sentry Config File
+.env.sentry-build-plugin
