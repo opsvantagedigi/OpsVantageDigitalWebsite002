@@ -4,6 +4,11 @@ const nextConfig = {
   // Turbopack/turbo experimental flag removed because Next.js reports
   // it as an unrecognized key in the current Next version.
 
+  // Disable Turbopack (Next.js 16 defaults to Turbopack). Explicitly
+  // set to false to force Webpack mode so Vercel builds succeed when
+  // a webpack config is present.
+  turbopack: false,
+
   // Generate browser source maps for debugging and Sentry
   productionBrowserSourceMaps: true,
 
