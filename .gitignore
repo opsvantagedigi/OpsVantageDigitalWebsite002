@@ -17,3 +17,11 @@ node_modules
 # Lighthouse reports (local audits)
 lighthouse-*.html
 lighthouse-*.json
+# Local one-off downloaded production artifacts
+prod_chunk*.js
+prod_chunk*.map
+
+# Optional: ignore all maps but keep CSS/JS maps
+# *.map
+# !*.css.map
+# !*.js.map
