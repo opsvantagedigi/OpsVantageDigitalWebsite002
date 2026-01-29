@@ -8,8 +8,8 @@
     "lint": "echo \"No lint configured for studio\""
   },
   "dependencies": {
-    "sanity": "^3.35.0",
-    "@sanity/vision": "^3.35.0",
-    "@portabletext/react": "^2.0.0"
+    "@portabletext/react": "^2.0.0",
+    "@sanity/vision": "^5.7.0",
+    "sanity": "^5.7.0"
   }
 }
