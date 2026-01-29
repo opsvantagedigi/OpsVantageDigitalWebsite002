@@ -22,7 +22,7 @@ export default function InsightsPreview(){
               <CardContent>
                 <p className="text-sm text-muted-2">A short preview of the insight to invite curiosity and action.</p>
                 <div className="mt-4">
-                  <Link href={`/marketing/insights/${p.slug}`} className="text-sm text-ovd-green">Read →</Link>
+                  <Link href={`/insights/${p.slug}`} className="text-sm text-ovd-green">Read →</Link>
                 </div>
               </CardContent>
             </Card>

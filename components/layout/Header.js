@@ -41,13 +41,13 @@ export default function Header(){
             <li ref={servicesRef} onMouseEnter={()=>setServicesOpen(true)} onMouseLeave={()=>setServicesOpen(false)}>
               <button aria-haspopup="true" aria-expanded={servicesOpen} onClick={()=>setServicesOpen((v)=>!v)} onKeyDown={(e)=>{ if(e.key==='Escape') setServicesOpen(false) }} className="text-muted-2">Services</button>
               <ul className={`dropdown-menu ${servicesOpen ? 'open' : ''}`} role="menu">
-                <li role="none"><Link href="/marketing/services">Advisory & Ops</Link></li>
-                <li role="none"><Link href="/marketing/work">Case Studies</Link></li>
-                <li role="none"><Link href="/marketing/insights">Insights</Link></li>
+                <li role="none"><Link href="/services">Advisory & Ops</Link></li>
+                <li role="none"><Link href="/work">Case Studies</Link></li>
+                <li role="none"><Link href="/insights">Insights</Link></li>
               </ul>
             </li>
-            <li className="ml-6"><Link href="/marketing/about">About</Link></li>
-            <li className="ml-6"><Link href="/marketing/contact">Contact</Link></li>
+            <li className="ml-6"><Link href="/about">About</Link></li>
+            <li className="ml-6"><Link href="/contact">Contact</Link></li>
           </ul>
         </nav>
 
@@ -62,13 +62,13 @@ export default function Header(){
               <details>
                 <summary>Services</summary>
                 <div className="flex flex-col pl-4">
-                  <Link href="/marketing/services">Advisory & Ops</Link>
-                  <Link href="/marketing/work">Case Studies</Link>
-                  <Link href="/marketing/insights">Insights</Link>
+                  <Link href="/services">Advisory & Ops</Link>
+                  <Link href="/work">Case Studies</Link>
+                  <Link href="/insights">Insights</Link>
                 </div>
               </details>
-              <Link href="/marketing/about">About</Link>
-              <Link href="/marketing/contact">Contact</Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
             </nav>
           </div>
         </div>

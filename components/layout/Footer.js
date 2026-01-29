@@ -19,9 +19,9 @@ export default function Footer(){
           <h4 className="font-semibold mb-2">Navigation</h4>
           <ul className="space-y-1 text-sm text-muted-2">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/marketing/services">Services</Link></li>
-            <li><Link href="/marketing/insights">Insights</Link></li>
-            <li><Link href="/marketing/contact">Contact</Link></li>
+            <li><Link href="/services">Services</Link></li>
+            <li><Link href="/insights">Insights</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -39,7 +39,7 @@ export default function Footer(){
           <h4 className="font-semibold mb-2">Get Started</h4>
           <p className="text-sm text-muted-2">Move faster with governance-grade systems.</p>
           <div className="mt-4">
-            <Link href="/marketing/contact"><a className="btn btn-gradient">Talk to Sales</a></Link>
+            <Link href="/contact"><a className="btn btn-gradient">Talk to Sales</a></Link>
           </div>
         </div>
       </div>
