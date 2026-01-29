@@ -8,6 +8,9 @@
     "postbuild": "node ./scripts/sentry-postbuild.js || true",
     "start": "next start -p 3000",
     "deploy": "vercel --prod",
+    "studio": "cd studio && npm run dev",
+    "studio:build": "cd studio && npm run build",
+    "studio:deploy": "cd studio && npm run deploy",
     "cleanup:lighthouse:ps1": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/cleanup-lighthouse.ps1",
     "cleanup:lighthouse:sh": "bash ./scripts/cleanup-lighthouse.sh",
     "cleanup:lighthouse": "npm run cleanup:lighthouse:ps1 || npm run cleanup:lighthouse:sh"

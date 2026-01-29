@@ -1,0 +1,15 @@
+{
+  "name": "opsvantage-studio",
+  "private": true,
+  "scripts": {
+    "dev": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "lint": "echo \"No lint configured for studio\""
+  },
+  "dependencies": {
+    "sanity": "^3.35.0",
+    "@sanity/vision": "^3.35.0",
+    "@portabletext/react": "^2.0.0"
+  }
+}
