@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Git hook template to prevent committing Lighthouse reports.
+# To activate hooks in this repo, run:
+#   git config core.hooksPath .githooks
+
+set -e
+
+# Check for any staged lighthouse files
+STAGED=$(git diff --name-only --cached --diff-filter=ACMR | grep -E '^lighthouse-.*\.(html|json)$' || true)
+
+if [ -n "$STAGED" ]; then
+  echo "\nERROR: Lighthouse report files are staged for commit:" >&2
+  echo "$STAGED" >&2
+  echo "\nPlease remove them from the commit (they should not be committed)." >&2
+  echo "Run: npm run cleanup:lighthouse" >&2
+  echo "Or to unstage files: git reset HEAD -- <file>" >&2
+  exit 1
+fi
+
+exit 0

@@ -20,9 +20,12 @@ try {
   console.log('Creating Sentry release', COMMIT);
   execSync(`npx sentry-cli releases -o ${SENTRY_ORG} -p ${SENTRY_PROJECT} new ${COMMIT}`, { stdio: 'inherit' });
 
-  console.log('Uploading source maps from .next to Sentry');
+  console.log('Uploading client-side source maps from .next/static to Sentry');
+  // Limit uploads to client-side artifacts to avoid warnings about server-side
+  // or test fixtures included in some node_modules paths inside the build.
+  // Client bundles and source maps are under .next/static (chunks, media, etc.).
   execSync(
-    `npx sentry-cli releases -o ${SENTRY_ORG} -p ${SENTRY_PROJECT} files ${COMMIT} upload-sourcemaps .next --rewrite --url-prefix '~/_next'`,
+    `npx sentry-cli releases -o ${SENTRY_ORG} -p ${SENTRY_PROJECT} files ${COMMIT} upload-sourcemaps .next/static --rewrite --url-prefix '~/_next/static'`,
     { stdio: 'inherit' }
   );
 

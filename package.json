@@ -7,7 +7,10 @@
     "build": "next build",
     "postbuild": "node ./scripts/sentry-postbuild.js || true",
     "start": "next start -p 3000",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+    "cleanup:lighthouse:ps1": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/cleanup-lighthouse.ps1",
+    "cleanup:lighthouse:sh": "bash ./scripts/cleanup-lighthouse.sh",
+    "cleanup:lighthouse": "npm run cleanup:lighthouse:ps1 || npm run cleanup:lighthouse:sh"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.6",

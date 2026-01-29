@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Force Webpack for all environments (dev + prod)
-  experimental: {
-    turbo: false,
-  },
+  // Turbopack/turbo experimental flag removed because Next.js reports
+  // it as an unrecognized key in the current Next version.
 
   // Generate browser source maps for debugging and Sentry
   productionBrowserSourceMaps: true,
