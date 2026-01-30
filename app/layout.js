@@ -16,10 +16,6 @@ export const icons = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="alternate icon" href="/favicon.ico" />
-      </head>
       <body>
         <Header />
         {/* Speed Insights integration removed to avoid build-time module error. Re-add after installing @vercel/speed-insights/next or using dynamic import. */}
