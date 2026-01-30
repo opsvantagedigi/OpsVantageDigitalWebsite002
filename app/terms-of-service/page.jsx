@@ -24,6 +24,11 @@ export default function TermsPage(){
           <h3 className="text-lg font-semibold">Limitation of Liability</h3>
           <p className="mt-2 text-sm text-muted-2">To the maximum extent permitted by law, OpsVantage Digital's liability for damages is limited as described in the applicable agreement.</p>
         </section>
+
+        <section className="mt-6">
+          <h3 className="text-lg font-semibold">Governing law</h3>
+          <p className="mt-2 text-sm text-muted-2">These Terms are governed by the laws of the jurisdiction specified in your contract or, absent a contract, the laws where our company is incorporated.</p>
+        </section>
       </article>
     </PageShell>
   )
