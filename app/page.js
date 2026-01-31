@@ -63,6 +63,18 @@ export default function Page() {
           <InsightsPreview />
         </div>
       </section>
+
+      {/* LEGACY-ALIGNED CTA: Invite, Don't Pressure
+          - Cinematic, warm, and clear. Invites conversation, not a transaction.
+          - Governance: Easy to update or A/B test. Safe for future stewards.
+      */}
+      <section className="section py-12 bg-gradient-to-b from-black/10 to-transparent border-t border-white/5">
+        <div className="container max-w-2xl mx-auto text-center">
+          <h3 className="text-2xl md:text-4xl font-bold mb-4">Ready to build your next chapter?</h3>
+          <p className="text-lg text-muted-2 mb-8">Let’s explore how OpsVantage can help you scale with care, clarity, and confidence. No pressure—just a conversation about your vision.</p>
+          <a href="/contact" className="btn btn-primary inline-block px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition hover:opacity-90">Start the Conversation</a>
+        </div>
+      </section>
     </>
   )
 }
