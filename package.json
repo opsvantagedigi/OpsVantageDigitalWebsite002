@@ -16,6 +16,7 @@
     "cleanup:lighthouse": "npm run cleanup:lighthouse:ps1 || npm run cleanup:lighthouse:sh"
   },
   "dependencies": {
+    "@opentelemetry/semantic-conventions": "^1.39.0",
     "@radix-ui/react-slot": "^1.0.6",
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "8.13.9",
@@ -36,7 +37,7 @@
   "devDependencies": {
     "@playwright/test": "^1.58.1",
     "source-map": "^0.7.6",
-    "vercel": "^50.9.1"
+    "vercel": "^32.3.0"
   },
   "overrides": {
     "tailwindcss": "^3.4.7"
