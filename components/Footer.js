@@ -54,7 +54,7 @@ export default function Footer(){
           <h4 className="font-semibold mb-2">Get Started</h4>
           <p className="text-sm text-muted-2">Move faster with governance-grade systems.</p>
           <div className="mt-4">
-            <Link href="/contact"><a className="btn btn-gradient">Talk to Sales</a></Link>
+            <Link href="/contact" className="btn btn-gradient">Talk to Sales</Link>
           </div>
         </div>
       </div>
