@@ -19,7 +19,7 @@ export default function Page() {
           <p className="text-lg md:text-xl text-muted-2 leading-relaxed mb-8">
             OpsVantage Digital is a new kind of digital partner—built for small and medium businesses who want more than just a website. We deliver clarity, care, and future-proof digital systems that help you grow with confidence.
           </p>
-          <Link href="/about-us" className="btn btn-primary px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition hover:opacity-90">Learn More</Link>
+          <Link href="/about" className="btn btn-primary px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition hover:opacity-90">Learn More</Link>
         </div>
       </section>
 

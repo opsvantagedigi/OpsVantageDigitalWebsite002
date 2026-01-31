@@ -30,7 +30,7 @@ export default function Footer(){
           <h4 className="font-semibold mb-2">Navigation</h4>
           <ul className="space-y-1 text-sm text-muted-2">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/about-us">About</Link></li>
+            <li><Link href="/about">About</Link></li>
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/insights">Insights</Link></li>
             <li><Link href="/work">Vision</Link></li>
