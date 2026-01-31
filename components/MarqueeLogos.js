@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const logos = ['/logo.png','/icon.png','/logo.png','/icon.png']
+const logos = ['/favicon.svg','/favicon.svg','/favicon.svg','/favicon.svg']
 
 export default function MarqueeLogos(){
   return (

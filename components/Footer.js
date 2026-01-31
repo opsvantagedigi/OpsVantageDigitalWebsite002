@@ -8,8 +8,7 @@ export default function Footer(){
       <div className="container py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
             <div className="inline-flex items-center gap-3">
-            <Image src="/icon.png" alt="OpsVantage icon" width={28} height={28} />
-            <Image src="/logo.png" alt="OpsVantage logo" width={140} height={36} />
+            <Image src="/favicon.svg" alt="OpsVantage logo" width={140} height={36} />
           </div>
           <p className="mt-3 text-sm text-muted-2">Revenue acceleration infrastructure for growth-focused teams.</p>
           <p className="mt-4 text-xs text-muted-2">© {new Date().getFullYear()} OpsVantage Digital</p>
