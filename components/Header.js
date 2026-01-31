@@ -43,7 +43,6 @@ export default function Header() {
           <Link href="/work" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">Work</Link>
           <Link href="/about" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">About</Link>
           <Link href="/contact" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">Contact</Link>
-          <Link href="/insights" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">Insights</Link>
         </nav>
       </div>
     </header>
