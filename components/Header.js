@@ -12,11 +12,8 @@ export default function Header() {
     <header className="ovd-header" id="header" role="banner">
       <div className="container" role="navigation" aria-label="Primary">
         <div className="nav__logo">
-          <Link href="/" aria-label="Home">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="logo-link">
-              <img src="/favicon.svg" alt="OpsVantage logo" className="logo" loading="eager" />
-            </a>
+          <Link href="/" aria-label="Home" className="logo-link">
+            <img src="/favicon.svg" alt="OpsVantage logo" className="logo" loading="eager" />
           </Link>
           <span className="brand-text">OpsVantage</span>
         </div>
