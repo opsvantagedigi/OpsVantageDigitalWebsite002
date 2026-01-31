@@ -8,7 +8,7 @@ export default function Header(){
         <div className="nav__logo">
           <Link href="/" aria-label="Home">
             <a className="logo-link">
-              <img src="/logo.png" alt="OpsVantage logo" className="logo" width="140" height="36" loading="eager" />
+              <img src="/logo.png" alt="OpsVantage logo" className="logo" loading="eager" />
             </a>
           </Link>
           <span className="brand-text">OpsVantage</span>
