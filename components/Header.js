@@ -38,11 +38,11 @@ export default function Header() {
           role="navigation"
           aria-label="Main Navigation"
         >
-          <Link href="/services" className="nav__link" onClick={handleClose}>Services</Link>
-          <Link href="/work" className="nav__link" onClick={handleClose}>Work</Link>
-          <Link href="/about" className="nav__link" onClick={handleClose}>About</Link>
-          <Link href="/contact" className="nav__link" onClick={handleClose}>Contact</Link>
-          <Link href="/insights" className="nav__link" onClick={handleClose}>Insights</Link>
+          <Link href="/services" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">Services</Link>
+          <Link href="/work" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">Work</Link>
+          <Link href="/about" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">About</Link>
+          <Link href="/contact" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">Contact</Link>
+          <Link href="/insights" className="nav__link" onClick={handleClose} tabIndex={0} role="menuitem">Insights</Link>
         </nav>
       </div>
     </header>
