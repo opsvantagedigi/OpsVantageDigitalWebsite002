@@ -18,24 +18,24 @@ export default function Hero() {
 
       <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-20 pt-20 md:flex-row md:items-center md:gap-16 md:px-6 lg:px-8 lg:pb-28 lg:pt-24">
         {/* Left: Copy */}
+
         <div className="max-w-xl space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/5 px-3 py-1 text-xs font-medium text-emerald-200/90 backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            OpsVantage Digital · Modern Ops & AI Studio
+            Trusted by visionaries. Engineered for tomorrow.
           </div>
 
-          <h1 className="text-balance text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl lg:text-5xl">
-            Websites. Automation. AI Agents. Domains.
-            <span className="block text-transparent bg-gradient-to-r from-sky-400 via-emerald-400 to-amber-300 bg-clip-text">
-              All in one platform.
-            </span>
+          <h1 className="text-balance text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
+            Build, automate, and scale your digital future—powered by OpsVantage.
           </h1>
 
-          <p className="text-pretty text-sm leading-relaxed text-slate-300 sm:text-base">
-            We design and build modern websites, automate business operations, integrate AI agents, and provision domains,
-            SSL certificates, email, and DNS through our OpenProvider‑powered infrastructure. Choose full‑service monitoring
-            and upkeep, or manage everything yourself through your OpsVantage Client Portal.
+          <p className="text-pretty text-lg leading-relaxed text-slate-300 sm:text-xl">
+            From first impression to full automation, we help you own every step of your digital journey—with care, clarity, and confidence.
           </p>
+
+          <a href="/contact" className="btn btn-primary inline-block px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition hover:opacity-90">
+            Start Your Journey
+          </a>
 
           {/* Value strip */}
           <div className="grid gap-3 text-xs text-slate-300 sm:grid-cols-2 sm:text-sm">
