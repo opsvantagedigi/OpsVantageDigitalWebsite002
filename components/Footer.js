@@ -30,8 +30,10 @@ export default function Footer(){
           <h4 className="font-semibold mb-2">Navigation</h4>
           <ul className="space-y-1 text-sm text-muted-2">
             <li><Link href="/">Home</Link></li>
+            <li><Link href="/about-us">About</Link></li>
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/insights">Insights</Link></li>
+            <li><Link href="/work">Vision</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -42,7 +44,9 @@ export default function Footer(){
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             <li><Link href="/terms-of-service">Terms of Service</Link></li>
             <li><Link href="/cookies">Cookies</Link></li>
+            <li><Link href="/cookie-policy">Cookie Policy</Link></li>
             <li><Link href="/disclaimer">Disclaimer</Link></li>
+            <li><Link href="/refund-policy">Refund Policy</Link></li>
           </ul>
         </div>
 
