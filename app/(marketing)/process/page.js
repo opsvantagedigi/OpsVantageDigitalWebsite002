@@ -1,7 +1,8 @@
 
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import { useEffect, useState } from 'react'
+"use client";
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import { useEffect, useState } from 'react';
 
 function ToTopButton() {
   const [visible, setVisible] = useState(false)
