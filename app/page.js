@@ -45,9 +45,15 @@ export default function Page() {
         </div>
       </section>
 
-      {/* TITAN UPGRADE: "Standardization" */}
-      <section className="section py-20">
-        <div className="container">
+
+      {/* TITAN HYBRID: Cinematic Full-Width Background, Contained Content
+          - We break the standard 'container' rhythm here to create a "Cinematic Pause."
+          - GOVERNANCE NOTE: The 'w-full' wrapper ensures the background creates an immersive break.
+            The internal component MUST have its own 'max-w' constraint to prevent data from stretching on 4k monitors (Stewardship).
+      */}
+      <section className="w-full relative border-y border-white/5 bg-gradient-to-b from-transparent to-black/20">
+        {/* This 'py-24' creates the 'Breathing Room' required by the Legacy Filter */}
+        <div className="py-24">
           <ProcessSnapshot />
         </div>
       </section>
