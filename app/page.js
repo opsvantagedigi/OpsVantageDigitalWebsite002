@@ -10,29 +10,53 @@ export default function Page() {
     <>
       <Hero />
 
-      <section className="section">
+      {/* TITAN UPGRADE: "The Value Anchor"
+         - Increased header size to text-5xl for authority.
+         - Added 'text-center' and 'max-w' to prevent eye fatigue on wide screens.
+         - Increased gap to 'mt-16' (64px) for visual calmness.
+      */}
+      <section className="section py-20">
         <div className="container">
-          <h2 className="text-2xl font-semibold">What We Build</h2>
-          <p className="text-muted-2">Productized systems that scale revenue, reduce churn, and optimize delivery.</p>
-          <div className="mt-6"><BentoGrid /></div>
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+              What We Build
+            </h2>
+            <p className="text-lg md:text-xl text-muted-2 leading-relaxed">
+              Productized systems that scale revenue, reduce churn, and optimize delivery.
+            </p>
+          </div>
+          {/* The Grid now sits comfortably below the narrative */}
+          <div className="w-full mt-16">
+            <BentoGrid />
+          </div>
         </div>
       </section>
 
-      <section className="section">
+      {/* TITAN UPGRADE: "Social Proof Rhythm" */}
+      <section className="section py-12">
         <div className="container">
           <Counters />
         </div>
       </section>
 
-      <section className="section">
+      <section className="section py-12 border-t border-white/5">
         <div className="container">
           <MarqueeLogos />
         </div>
       </section>
 
-      <ProcessSnapshot />
+      {/* TITAN UPGRADE: "Standardization" */}
+      <section className="section py-20">
+        <div className="container">
+          <ProcessSnapshot />
+        </div>
+      </section>
 
-      <InsightsPreview />
+      <section className="section pb-20">
+        <div className="container">
+          <InsightsPreview />
+        </div>
+      </section>
     </>
   )
 }
