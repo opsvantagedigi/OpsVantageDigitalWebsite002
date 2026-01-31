@@ -15,7 +15,7 @@ export default function Header() {
           <Link href="/" aria-label="Home" className="logo-link">
             <img src="/favicon.svg" alt="OpsVantage logo" className="logo" loading="eager" />
           </Link>
-          <span className="brand-text">OpsVantage</span>
+          <span className="brand-text">OpsVantage Digital</span>
         </div>
 
         <button
