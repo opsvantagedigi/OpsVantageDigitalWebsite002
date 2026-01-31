@@ -21,6 +21,10 @@ lighthouse-*.json
 prod_chunk*.js
 prod_chunk*.map
 
+# Playwright test artifacts
+playwright-report/
+test-results/
+
 # Optional: ignore all maps but keep CSS/JS maps
 # *.map
 # !*.css.map
