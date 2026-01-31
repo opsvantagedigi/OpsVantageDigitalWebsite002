@@ -14,7 +14,7 @@ export default function Header() {
           <Link href="/" aria-label="Home">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="logo-link">
-              <img src="/logo.png" alt="OpsVantage logo" className="logo" loading="eager" />
+              <img src="/favicon.svg" alt="OpsVantage logo" className="logo" loading="eager" />
             </a>
           </Link>
           <span className="brand-text">OpsVantage</span>
