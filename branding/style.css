@@ -101,6 +101,7 @@ button {
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
 }
 
+/*
 .button--primary {
   background: var(--gradient);
 }
@@ -132,8 +133,10 @@ button {
   background-color: white;
   color: var(--primary-color);
 }
+*/
 
 /* ===== HEADER & NAV ===== */
+/*
 .header {
   position: fixed;
   top: 0;
@@ -194,6 +197,7 @@ button {
 .nav__toggle {
   display: none;
 }
+*/
 
 /* ===== HERO ===== */
 .hero {
@@ -295,6 +299,7 @@ button {
   box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
 }
 
+/*
 .features__icon {
   font-size: 2.5rem;
   color: var(--primary-color);
@@ -311,6 +316,7 @@ button {
   color: var(--text-color);
   line-height: 1.6;
 }
+*/
 
 /* ===== SERVICES PREVIEW ===== */
 .services-preview__container {
@@ -344,6 +350,7 @@ button {
   box-shadow: 0 12px 40px rgba(37, 99, 235, 0.2);
 }
 
+/*
 .service-preview__icon {
   font-size: 3rem;
   color: var(--primary-color);
@@ -371,6 +378,7 @@ button {
 .service-preview__link:hover {
   color: var(--primary-color-alt);
 }
+*/
 
 /* ===== CTA ===== */
 .cta {
@@ -490,6 +498,7 @@ button {
   color: var(--primary-color);
 }
 
+/*
 .footer__copy {
   text-align: center;
   padding: 2rem 0;
@@ -497,6 +506,7 @@ button {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
 }
+*/
 
 /* ===== SCROLL BAR ===== */
 ::-webkit-scrollbar {
@@ -553,9 +563,11 @@ button {
     padding: 4rem 0 0 3rem;
   }
 
+  /*
   .nav__menu.show-menu {
     right: 0;
   }
+  */
 
   .nav__list {
     flex-direction: column;

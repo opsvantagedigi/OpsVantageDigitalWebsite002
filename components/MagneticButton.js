@@ -1,6 +1,9 @@
 "use client";
-import React, { useRef } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import React, { useRef, useCallback } from "react";
+import dynamic from "next/dynamic";
+const motion = dynamic(() => import("framer-motion").then(mod => mod.motion), { ssr: false });
+// useMotionValue and useSpring must be imported directly where used
+import { useMotionValue, useSpring } from "framer-motion";
 
 export default function MagneticButton({ children, className = "", ...props }) {
   const ref = useRef(null);
@@ -10,17 +13,36 @@ export default function MagneticButton({ children, className = "", ...props }) {
   const springX = useSpring(x, springConfig);
   const springY = useSpring(y, springConfig);
 
-  function handleMouseMove(e) {
-    const rect = ref.current.getBoundingClientRect();
+
+  // Throttle getBoundingClientRect to once per animation frame
+  const frame = useRef(null);
+  const lastRect = useRef(null);
+  const handleMouseMove = useCallback((e) => {
+    if (!ref.current) return;
+    if (!lastRect.current) {
+      lastRect.current = ref.current.getBoundingClientRect();
+    }
+    if (!frame.current) {
+      frame.current = requestAnimationFrame(() => {
+        frame.current = null;
+        lastRect.current = null;
+      });
+    }
+    const rect = lastRect.current;
     const relX = e.clientX - rect.left - rect.width / 2;
     const relY = e.clientY - rect.top - rect.height / 2;
     x.set(relX * 0.3);
     y.set(relY * 0.3);
-  }
+  }, [x, y]);
 
   function handleMouseLeave() {
     x.set(0);
     y.set(0);
+    lastRect.current = null;
+    if (frame.current) {
+      cancelAnimationFrame(frame.current);
+      frame.current = null;
+    }
   }
 
   return (
