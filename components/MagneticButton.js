@@ -1,9 +1,6 @@
 "use client";
 import React, { useRef, useCallback } from "react";
-import dynamic from "next/dynamic";
-const motion = dynamic(() => import("framer-motion").then(mod => mod.motion), { ssr: false });
-// useMotionValue and useSpring must be imported directly where used
-import { useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 export default function MagneticButton({ children, className = "", ...props }) {
   const ref = useRef(null);

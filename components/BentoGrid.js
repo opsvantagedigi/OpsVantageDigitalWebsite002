@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import dynamic from "next/dynamic";
-const motion = dynamic(() => import("framer-motion").then(mod => mod.motion), { ssr: false });
+import { motion } from "framer-motion";
 
 const items = [
   {
