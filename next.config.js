@@ -14,17 +14,17 @@ const nextConfig = {
 
   // Keep Webpack config stable and predictable
   webpack: (config, { isServer }) => {
-    config.devtool = 'source-map';
-    if (process.env.ANALYZE === 'true') {
-      const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+    config.devtool = "source-map";
+    if (process.env.ANALYZE === "true") {
+      const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
       config.plugins = config.plugins || [];
       config.plugins.push(
         new BundleAnalyzerPlugin({
-          analyzerMode: 'static',
+          analyzerMode: "static",
           reportFilename: isServer
-            ? '../analyze/server.html'
-            : './analyze/client.html',
-        })
+            ? "../analyze/server.html"
+            : "./analyze/client.html",
+        }),
       );
     }
     return config;

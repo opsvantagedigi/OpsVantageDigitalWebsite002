@@ -1,17 +1,22 @@
 :root {
-  --ovd-blue: #0033A0;
-  --ovd-green: #00A676;
-  --ovd-yellow: #F2C94C;
+  --ovd-blue: #0033a0;
+  --ovd-green: #00a676;
+  --ovd-yellow: #f2c94c;
 
-  --ovd-gradient: linear-gradient(90deg, var(--ovd-blue), var(--ovd-green), var(--ovd-yellow));
+  --ovd-gradient: linear-gradient(
+    90deg,
+    var(--ovd-blue),
+    var(--ovd-green),
+    var(--ovd-yellow)
+  );
 }
 
 :root {
-  --ovd-midnight: #0A0F1F;   /* Primary favourite */
-  --ovd-purple: #6A0DAD;     /* Secondary favourite */
-  --ovd-slate: #1C2333;
-  --ovd-light: #F5F7FA;
-  --ovd-grey: #A7A9AC;
+  --ovd-midnight: #0a0f1f; /* Primary favourite */
+  --ovd-purple: #6a0dad; /* Secondary favourite */
+  --ovd-slate: #1c2333;
+  --ovd-light: #f5f7fa;
+  --ovd-grey: #a7a9ac;
 }
 
 /* Usage rules (guidance only) */
@@ -33,10 +38,9 @@ Green	Success states	Avoid pairing with yellow text
   --title-color: var(--ovd-midnight);
   --text-color: var(--ovd-slate);
   --text-color-light: var(--ovd-grey);
-  --border-color: rgba(0,0,0,0.04);
+  --border-color: rgba(0, 0, 0, 0.04);
   --body-color: var(--ovd-light);
   --container-color: #ffffff;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --gradient: var(--ovd-gradient);
 }
-

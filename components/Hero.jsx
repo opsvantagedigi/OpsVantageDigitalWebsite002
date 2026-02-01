@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import dynamic from 'next/dynamic'
-import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-const HeroScene = dynamic(() => import('./HeroScene'), {
+const HeroScene = dynamic(() => import("./HeroScene"), {
   ssr: false,
   loading: () => (
     <div className="h-[260px] w-full rounded-3xl bg-gradient-to-br from-sky-500/20 via-emerald-400/10 to-amber-300/10 animate-pulse" />
   ),
-})
+});
 
 export default function Hero() {
   return (
@@ -26,14 +26,19 @@ export default function Hero() {
           </div>
 
           <h1 className="text-balance text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
-            Build, automate, and scale your digital future—powered by OpsVantage.
+            Build, automate, and scale your digital future—powered by
+            OpsVantage.
           </h1>
 
           <p className="text-pretty text-lg leading-relaxed text-slate-300 sm:text-xl">
-            From first impression to full automation, we help you own every step of your digital journey—with care, clarity, and confidence.
+            From first impression to full automation, we help you own every step
+            of your digital journey—with care, clarity, and confidence.
           </p>
 
-          <a href="/contact" className="btn btn-primary inline-block px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition hover:opacity-90">
+          <a
+            href="/contact"
+            className="btn btn-primary inline-block px-8 py-3 text-lg font-semibold rounded-lg shadow-md transition hover:opacity-90"
+          >
             Start Your Journey
           </a>
 
@@ -41,19 +46,28 @@ export default function Hero() {
           <div className="grid gap-3 text-xs text-slate-300 sm:grid-cols-2 sm:text-sm">
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400" />
-              <p>Website design & development with governance‑grade performance and accessibility.</p>
+              <p>
+                Website design & development with governance‑grade performance
+                and accessibility.
+              </p>
             </div>
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              <p>Business workflows, CRM, and operations automated end‑to‑end.</p>
+              <p>
+                Business workflows, CRM, and operations automated end‑to‑end.
+              </p>
             </div>
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-amber-300" />
-              <p>AI agents embedded into your stack for support, ops, and growth.</p>
+              <p>
+                AI agents embedded into your stack for support, ops, and growth.
+              </p>
             </div>
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-fuchsia-400" />
-              <p>Domains, SSL, email, and DNS provisioned and monitored for you.</p>
+              <p>
+                Domains, SSL, email, and DNS provisioned and monitored for you.
+              </p>
             </div>
           </div>
 
@@ -97,7 +111,8 @@ export default function Hero() {
 
           {/* Trust line */}
           <p className="pt-1 text-xs text-slate-400">
-            Full‑service monitoring and upkeep available on subscription, or self‑managed via your OpsVantage dashboard.
+            Full‑service monitoring and upkeep available on subscription, or
+            self‑managed via your OpsVantage dashboard.
           </p>
         </div>
 
@@ -114,5 +129,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -18,37 +18,37 @@ Key callouts
 MARZ‑related UI elements
 
 :root {
-  --ovd-blue: #0033A0;
-  --ovd-green: #00A676;
-  --ovd-yellow: #F2C94C;
+--ovd-blue: #0033A0;
+--ovd-green: #00A676;
+--ovd-yellow: #F2C94C;
 
-  --ovd-gradient: linear-gradient(90deg, var(--ovd-blue), var(--ovd-green), var(--ovd-yellow));
+--ovd-gradient: linear-gradient(90deg, var(--ovd-blue), var(--ovd-green), var(--ovd-yellow));
 }
 
 Secondary Palette
 Used for backgrounds, cards, subtle accents.
 
 :root {
-  --ovd-midnight: #0A0F1F;   /* Primary favourite */
-  --ovd-purple: #6A0DAD;     /* Secondary favourite */
-  --ovd-slate: #1C2333;
-  --ovd-light: #F5F7FA;
-  --ovd-grey: #A7A9AC;
+--ovd-midnight: #0A0F1F; /_ Primary favourite _/
+--ovd-purple: #6A0DAD; /_ Secondary favourite _/
+--ovd-slate: #1C2333;
+--ovd-light: #F5F7FA;
+--ovd-grey: #A7A9AC;
 }
 
 Usage Rules
-Color	Use	Avoid
-Midnight Blue	Backgrounds, hero, footer	Never for body text
-Purple	Highlights, MARZ UI	Never as full background
-Gradient	Buttons, titles, borders	Never for long paragraphs
-Yellow	Warnings, highlights	Never as background with white text
-Green	Success states	Avoid pairing with yellow text
+Color Use Avoid
+Midnight Blue Backgrounds, hero, footer Never for body text
+Purple Highlights, MARZ UI Never as full background
+Gradient Buttons, titles, borders Never for long paragraphs
+Yellow Warnings, highlights Never as background with white text
+Green Success states Avoid pairing with yellow text
 
 🔤 2. Typography System
 Headlines (Brand Signature)
 
 :root {
-  --font-heading: 'Orbitron', sans-serif;
+--font-heading: 'Orbitron', sans-serif;
 }
 
 Usage:
@@ -64,7 +64,7 @@ Section headers
 Body Text
 
 :root {
-  --font-body: 'Inter', sans-serif;
+--font-body: 'Inter', sans-serif;
 }
 
 Usage:
@@ -82,23 +82,23 @@ Font Scale
 h1 { font-size: 3rem; letter-spacing: 0.5px; }
 h2 { font-size: 2.25rem; }
 h3 { font-size: 1.75rem; }
-p  { font-size: 1rem; line-height: 1.6; }
+p { font-size: 1rem; line-height: 1.6; }
 
 🧱 3. Layout System (Spacing, Containers, Grid)
 
 :root {
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 32px;
-  --space-xl: 64px;
+--space-xs: 4px;
+--space-sm: 8px;
+--space-md: 16px;
+--space-lg: 32px;
+--space-xl: 64px;
 
-  --container-width: 1200px;
+--container-width: 1200px;
 }
 .container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 var(--space-md);
+max-width: var(--container-width);
+margin: 0 auto;
+padding: 0 var(--space-md);
 }
 
 🧭 4. Header Style (Responsive, Premium, Cinematic)
@@ -123,27 +123,27 @@ HTML
 CSS
 
 .ovd-header {
-  background: var(--ovd-midnight);
-  padding: var(--space-md) 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+background: var(--ovd-midnight);
+padding: var(--space-md) 0;
+border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .brand-text {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  background: var(--ovd-gradient);
-  -webkit-background-clip: text;
-  color: transparent;
+font-family: var(--font-heading);
+font-size: 1.5rem;
+background: var(--ovd-gradient);
+-webkit-background-clip: text;
+color: transparent;
 }
 
 .nav a {
-  color: var(--ovd-light);
-  margin-left: var(--space-lg);
-  font-family: var(--font-body);
-  transition: 0.3s ease;
+color: var(--ovd-light);
+margin-left: var(--space-lg);
+font-family: var(--font-body);
+transition: 0.3s ease;
 }
 .nav a:hover {
-  color: var(--ovd-yellow);
+color: var(--ovd-yellow);
 }
 
 🦶 5. Footer Style (Legacy‑Driven, Minimal, Elegant)
@@ -159,49 +159,49 @@ HTML
 CSS
 
 .ovd-footer {
-  background: var(--ovd-slate);
-  padding: var(--space-lg) 0;
-  text-align: center;
-  color: var(--ovd-grey);
-  font-family: var(--font-body);
-  font-size: 0.9rem;
+background: var(--ovd-slate);
+padding: var(--space-lg) 0;
+text-align: center;
+color: var(--ovd-grey);
+font-family: var(--font-body);
+font-size: 0.9rem;
 }
 
 🧩 6. Components (Buttons, Cards, Inputs)
 Buttons
 
 .btn-primary {
-  background: var(--ovd-gradient);
-  padding: var(--space-sm) var(--space-lg);
-  border-radius: 6px;
-  color: white;
-  font-family: var(--font-body);
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
+background: var(--ovd-gradient);
+padding: var(--space-sm) var(--space-lg);
+border-radius: 6px;
+color: white;
+font-family: var(--font-body);
+font-weight: 600;
+border: none;
+cursor: pointer;
+transition: 0.3s ease;
 }
 .btn-primary:hover {
-  opacity: 0.85;
+opacity: 0.85;
 }
 Cards
 
 .ovd-card {
-  background: var(--ovd-midnight);
-  padding: var(--space-lg);
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
-  color: var(--ovd-light);
+background: var(--ovd-midnight);
+padding: var(--space-lg);
+border-radius: 12px;
+border: 1px solid rgba(255,255,255,0.05);
+color: var(--ovd-light);
 }
 Inputs
 
 .ovd-input {
-  width: 100%;
-  padding: var(--space-md);
-  border-radius: 6px;
-  border: 1px solid var(--ovd-grey);
-  background: #fff;
-  font-family: var(--font-body);
+width: 100%;
+padding: var(--space-md);
+border-radius: 6px;
+border: 1px solid var(--ovd-grey);
+background: #fff;
+font-family: var(--font-body);
 }
 
 📁 7. New File Tree Additions
@@ -211,13 +211,13 @@ Code
 OpsVantageDigitalWebsite_V2.0
 │
 ├── branding
-│   ├── colors.css
-│   ├── typography.css
-│   ├── layout.css
-│   ├── components.css
-│   ├── header.css
-│   ├── footer.css
-│   └── branding.md
+│ ├── colors.css
+│ ├── typography.css
+│ ├── layout.css
+│ ├── components.css
+│ ├── header.css
+│ ├── footer.css
+│ └── branding.md
 │
 └── assets
-    └── logo.png
+└── logo.png

@@ -1,9 +1,9 @@
 export default {
-  name: 'author',
-  type: 'document',
-  title: 'Author',
+  name: "author",
+  type: "document",
+  title: "Author",
   fields: [
-    { name: 'name', type: 'string', title: 'Name' },
-    { name: 'bio', type: 'array', of: [{ type: 'block' }], title: 'Bio' }
-  ]
-}
+    { name: "name", type: "string", title: "Name" },
+    { name: "bio", type: "array", of: [{ type: "block" }], title: "Bio" },
+  ],
+};

@@ -1,5 +1,5 @@
 /* Copied from assets/css/style.css to remove /assets dependency */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 /* ===== BASE ===== */
 * {
@@ -26,7 +26,10 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -257,8 +260,13 @@ button {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 /* ===== FEATURES ===== */
@@ -277,7 +285,9 @@ button {
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 4px 16px var(--shadow-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .features__card:hover {
@@ -320,7 +330,7 @@ button {
 }
 
 .service-preview__card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

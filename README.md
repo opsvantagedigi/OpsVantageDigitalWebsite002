@@ -1,4 +1,5 @@
 # OpsVantageDigitalWebsite002
+
 Business Website Version 002
 
 Repository file tree (partial):
@@ -6,21 +7,22 @@ Repository file tree (partial):
 OpsVantageDigitalWebsite_V2.0
 │
 ├── branding
-│   ├── colors.css
-   ├── typography.css
-   ├── layout.css
-   ├── components.css
-   ├── header.css
-   ├── footer.css
-   └── branding.md
+│ ├── colors.css
+├── typography.css
+├── layout.css
+├── components.css
+├── header.css
+├── footer.css
+└── branding.md
 │
 └── OpsVantageDigitalWebsite002
-	├── index.html
-	├── about.html
-	├── services.html
-	├── contact.html
-	└── assets
-		├── css
+├── index.html
+├── about.html
+├── services.html
+├── contact.html
+└── assets
+├── css
+
 ## Deploying to Vercel
 
 Local quick deploy (interactive):
@@ -43,6 +45,6 @@ VERCEL_TOKEN=your_token_here npm run deploy
 
 The project includes `vercel.json` with standard Next.js build settings and a `.vercelignore` to exclude local artifacts.
 
-		│   └── style.css
-		└── js
-			└── main.js
+    	│   └── style.css
+    	└── js
+    		└── main.js

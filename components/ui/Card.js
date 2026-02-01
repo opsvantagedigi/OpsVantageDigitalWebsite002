@@ -1,28 +1,44 @@
-import React from 'react'
-import { cn } from '../../lib/cn'
+import React from "react";
+import { cn } from "../../lib/cn";
 
-export function Card({ children, className, ...props }){
+export function Card({ children, className, ...props }) {
   return (
-    <div className={cn('rounded-lg border card-surface shadow-sm', className)} {...props}>
+    <div
+      className={cn("rounded-lg border card-surface shadow-sm", className)}
+      {...props}
+    >
       {children}
     </div>
-  )
+  );
 }
 
-export function CardHeader({ children, className }){
-  return <div className={cn('px-4 py-3 border-b border-subtle', className)}>{children}</div>
+export function CardHeader({ children, className }) {
+  return (
+    <div className={cn("px-4 py-3 border-b border-subtle", className)}>
+      {children}
+    </div>
+  );
 }
 
-export function CardTitle({ children, className }){
-  return <h3 className={cn('text-lg font-semibold', className)}>{children}</h3>
+export function CardTitle({ children, className }) {
+  return <h3 className={cn("text-lg font-semibold", className)}>{children}</h3>;
 }
 
-export function CardContent({ children, className }){
-  return <div className={cn('p-4', className)}>{children}</div>
+export function CardContent({ children, className }) {
+  return <div className={cn("p-4", className)}>{children}</div>;
 }
 
-export function CardFooter({ children, className }){
-  return <div className={cn('px-4 py-3 border-t text-sm text-muted-2 border-subtle', className)}>{children}</div>
+export function CardFooter({ children, className }) {
+  return (
+    <div
+      className={cn(
+        "px-4 py-3 border-t text-sm text-muted-2 border-subtle",
+        className,
+      )}
+    >
+      {children}
+    </div>
+  );
 }
 
-export default Card
+export default Card;

@@ -36,5 +36,6 @@ npm run deploy
 ```
 
 Notes
+
 - If you prefer the Sanity CLI globally: `npm i -g @sanity/cli`.
 - The Studio reads `SANITY_STUDIO_PROJECT_ID` and `SANITY_STUDIO_DATASET` from env.

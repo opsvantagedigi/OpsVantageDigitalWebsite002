@@ -1,15 +1,25 @@
 :root {
-  --font-heading: 'Orbitron', sans-serif;
+  --font-heading: "Orbitron", sans-serif;
 }
 
 :root {
-  --font-body: 'Inter', sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
-h1 { font-size: 3rem; letter-spacing: 0.5px; }
-h2 { font-size: 2.25rem; }
-h3 { font-size: 1.75rem; }
-p  { font-size: 1rem; line-height: 1.6; }
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+}
+h2 {
+  font-size: 2.25rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 /* Compatibility variables used by legacy styles */
 :root {
