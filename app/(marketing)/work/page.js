@@ -49,7 +49,7 @@ function ThemeToggle() {
 
 export default function WorkPage() {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col">
+    <>
       <main className="container mx-auto px-6 py-12 max-w-3xl flex-1">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
           <Sparkles>What We’re Building</Sparkles>
@@ -103,6 +103,6 @@ export default function WorkPage() {
       </main>
       <ThemeToggle />
       <ToTopButton />
-    </div>
+    </>
   );
 }
