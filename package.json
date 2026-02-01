@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
-    "build": "next build --webpack",
+    "build": "next build",
     "postbuild": "node ./scripts/sentry-postbuild.js || true",
     "start": "next start -p 3000",
     "deploy": "vercel --prod",
@@ -25,7 +25,7 @@
     "clsx": "^1.2.1",
     "framer-motion": "10.12.16",
     "lucide-react": "^0.268.0",
-    "next": "^16.1.6",
+    "next": "^15.3.3",
     "postcss": "^8.4.26",
     "react": "18.2.0",
     "react-dom": "18.2.0",
