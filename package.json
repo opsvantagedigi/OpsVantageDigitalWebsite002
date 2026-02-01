@@ -37,7 +37,7 @@
   "devDependencies": {
     "@playwright/test": "^1.58.1",
     "source-map": "^0.7.6",
-    "vercel": "^32.3.0"
+    "vercel": "^50.9.6"
   },
   "overrides": {
     "tailwindcss": "^3.4.7"
