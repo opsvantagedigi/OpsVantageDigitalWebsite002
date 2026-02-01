@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Provide an empty Turbopack config to silence Next.js 16 warnings
-  turbopack: {},
+  // ...existing code...
 
   // Generate browser source maps for debugging and Sentry
   productionBrowserSourceMaps: true,

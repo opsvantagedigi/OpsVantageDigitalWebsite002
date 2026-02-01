@@ -13,8 +13,8 @@ test.describe('Header and Menu', () => {
     const nav = page.locator('header nav');
     await expect(nav).toBeVisible();
     const links = nav.locator('a');
-    await expect(links).toHaveCount(4);
-    for (let i = 0; i < 4; i++) {
+    await expect(links).toHaveCount(5);
+    for (let i = 0; i < 5; i++) {
       await expect(links.nth(i)).toBeVisible();
       await expect(links.nth(i)).toHaveAttribute('tabindex', /\d*/);
     }
