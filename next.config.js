@@ -31,4 +31,15 @@ const nextConfig = {
   },
 };
 
+
+// Add security headers (CSP, etc.)
+const securityHeaders = require('./next.headers.js');
+
+nextConfig.headers = async () => [
+  {
+    source: '/(.*)',
+    headers: securityHeaders,
+  },
+];
+
 module.exports = nextConfig;
