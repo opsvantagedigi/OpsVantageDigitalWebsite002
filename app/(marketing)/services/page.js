@@ -1,6 +1,4 @@
 "use client";
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
 import { useEffect, useState } from "react";
 import Sparkles from "../../../components/Sparkles";
 import MagneticButton from "../../../components/MagneticButton";
@@ -53,7 +51,6 @@ function ThemeToggle() {
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col">
-      <Header />
       <main className="container mx-auto px-6 py-12 max-w-4xl flex-1">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
           <Sparkles>Our Services</Sparkles>
@@ -209,7 +206,6 @@ export default function ServicesPage() {
       </main>
       <ThemeToggle />
       <ToTopButton />
-      <Footer />
     </div>
   );
 }
