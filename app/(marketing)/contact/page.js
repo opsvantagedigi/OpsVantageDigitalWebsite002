@@ -2,6 +2,8 @@
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import { useEffect, useState } from "react";
+import Sparkles from "../../../components/Sparkles";
+import MagneticButton from "../../../components/MagneticButton";
 
 function ToTopButton() {
   const [visible, setVisible] = useState(false);
@@ -57,12 +59,11 @@ export default function ContactPage() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col">
       <Header />
       <main className="container mx-auto px-6 py-12 max-w-xl flex-1">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-sky-500 via-emerald-500 to-amber-400 bg-clip-text text-transparent">
-          Contact Us
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+          <Sparkles>Contact Us</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          Let’s start your journey. Reach out for a free strategy session,
-          partnership, or support.
+          <Sparkles>Let’s start your journey. Reach out for a free strategy session, partnership, or support.</Sparkles>
         </p>
         <form
           className="space-y-6"
@@ -136,12 +137,9 @@ export default function ContactPage() {
               messages.
             </label>
           </div>
-          <button
-            type="submit"
-            className="btn btn-primary w-full py-3 font-semibold text-lg"
-          >
+          <MagneticButton type="submit" className="w-full py-3 font-semibold text-lg">
             Send Message
-          </button>
+          </MagneticButton>
         </form>
         {submitted && (
           <div className="mt-6 p-4 rounded-lg bg-emerald-100 text-emerald-900 dark:bg-emerald-900 dark:text-emerald-100 text-center shadow-md">

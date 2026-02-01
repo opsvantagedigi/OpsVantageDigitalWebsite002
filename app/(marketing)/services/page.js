@@ -2,6 +2,9 @@
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import { useEffect, useState } from "react";
+import Sparkles from "../../../components/Sparkles";
+import MagneticButton from "../../../components/MagneticButton";
+import BentoGrid from "../../../components/BentoGrid";
 
 function ToTopButton() {
   const [visible, setVisible] = useState(false);
@@ -52,13 +55,15 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col">
       <Header />
       <main className="container mx-auto px-6 py-12 max-w-4xl flex-1">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-sky-500 via-emerald-500 to-amber-400 bg-clip-text text-transparent">
-          Our Services
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+          <Sparkles>Our Services</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          A comprehensive, legacy-aligned articulation of everything we offer
-          our clients.
+          <Sparkles>A comprehensive, legacy-aligned articulation of everything we offer our clients.</Sparkles>
         </p>
+        <div className="mb-12">
+          <BentoGrid />
+        </div>
         <section className="space-y-10">
           <div>
             <h2 className="text-2xl font-semibold mb-2">
@@ -196,6 +201,11 @@ export default function ServicesPage() {
             </ul>
           </div>
         </section>
+        <div className="flex justify-center mt-12">
+          <MagneticButton as="a" href="/contact">
+            Get Started
+          </MagneticButton>
+        </div>
       </main>
       <ThemeToggle />
       <ToTopButton />

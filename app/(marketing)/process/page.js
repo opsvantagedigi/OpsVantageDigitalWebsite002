@@ -2,6 +2,8 @@
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import { useEffect, useState } from "react";
+import Sparkles from "../../../components/Sparkles";
+import MagneticButton from "../../../components/MagneticButton";
 
 function ToTopButton() {
   const [visible, setVisible] = useState(false);
@@ -52,12 +54,11 @@ export default function ProcessPage() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col">
       <Header />
       <main className="container mx-auto px-6 py-12 max-w-3xl flex-1">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-sky-500 via-emerald-500 to-amber-400 bg-clip-text text-transparent">
-          Our Process
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+          <Sparkles>Our Process</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          A proven, governance-grade approach to building digital systems that
-          last.
+          <Sparkles>A proven, governance-grade approach to building digital systems that last.</Sparkles>
         </p>
         <section className="space-y-10">
           <div>
@@ -117,6 +118,11 @@ export default function ProcessPage() {
             <li>Transparent documentation and change logs</li>
           </ul>
         </section>
+        <div className="flex justify-center mt-12">
+          <MagneticButton as="a" href="/contact">
+            Start Your Project
+          </MagneticButton>
+        </div>
       </main>
       <ThemeToggle />
       <ToTopButton />
