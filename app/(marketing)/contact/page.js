@@ -60,7 +60,10 @@ export default function ContactPage() {
           <Sparkles>Contact Us</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          <Sparkles>Let’s start your journey. Reach out for a free strategy session, partnership, or support.</Sparkles>
+          <Sparkles>
+            Let’s start your journey. Reach out for a free strategy session,
+            partnership, or support.
+          </Sparkles>
         </p>
         <form
           className="space-y-6"
@@ -134,7 +137,10 @@ export default function ContactPage() {
               messages.
             </label>
           </div>
-          <MagneticButton type="submit" className="w-full py-3 font-semibold text-lg">
+          <MagneticButton
+            type="submit"
+            className="w-full py-3 font-semibold text-lg"
+          >
             Send Message
           </MagneticButton>
         </form>

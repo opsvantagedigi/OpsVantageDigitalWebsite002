@@ -1,3 +1,6 @@
+// Governance Note: This is the BentoGrid component. It visually organizes key product pillars for clarity and impact.
+// Maintenance: Update grid items and animation logic as offerings evolve. Keep code teachable and cinematic.
+// Legacy Alignment: Follows "Clarity over Cleverness" and "Visual Hierarchy" pillars. Comments clarify narrative and teachability.
 "use client";
 import React from "react";
 import { motion } from "framer-motion";

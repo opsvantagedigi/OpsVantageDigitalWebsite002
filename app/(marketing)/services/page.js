@@ -56,7 +56,10 @@ export default function ServicesPage() {
           <Sparkles>Our Services</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          <Sparkles>A comprehensive, legacy-aligned articulation of everything we offer our clients.</Sparkles>
+          <Sparkles>
+            A comprehensive, legacy-aligned articulation of everything we offer
+            our clients.
+          </Sparkles>
         </p>
         <div className="mb-12">
           <BentoGrid />

@@ -1,3 +1,6 @@
+// Governance Note: This is the main landing page. It orchestrates all hero, branding, and preview components.
+// Maintenance: Update hero, counters, and preview sections as product offerings evolve. Keep all logic teachable and cinematic.
+// Legacy Alignment: Follows "Cinematic" and "Clarity" pillars. Comments clarify emotional impact and narrative flow.
 import Hero from "../components/Hero";
 import Counters from "../components/Counters";
 import MarqueeLogos from "../components/MarqueeLogos";
@@ -11,13 +14,14 @@ import Link from "next/link";
 export default function Page() {
   return (
     <>
-
       {/* Cinematic Hero with Sparkles */}
       <div className="relative">
         <Hero />
         <div className="absolute left-1/2 top-8 -translate-x-1/2 z-10">
           <Sparkles>
-            <span className="text-3xl md:text-5xl font-bold text-ovd-blue drop-shadow-lg">2025 Agency Ecosystem</span>
+            <span className="text-3xl md:text-5xl font-bold text-ovd-blue drop-shadow-lg">
+              2025 Agency Ecosystem
+            </span>
           </Sparkles>
         </div>
       </div>
@@ -47,7 +51,9 @@ export default function Page() {
             <Sparkles>Our Services</Sparkles>
           </h2>
           <p className="text-lg md:text-xl text-muted-2 leading-relaxed mb-8">
-            From premium websites to automation, AI, and ongoing stewardship—OpsVantage Digital offers a complete suite of services to help your business thrive in the digital era.
+            From premium websites to automation, AI, and ongoing
+            stewardship—OpsVantage Digital offers a complete suite of services
+            to help your business thrive in the digital era.
           </p>
           <BentoGrid />
           <div className="mt-8">
@@ -93,13 +99,19 @@ export default function Page() {
             <Sparkles>Ready to build your next chapter?</Sparkles>
           </h3>
           <p className="text-lg text-muted-2 mb-8">
-            Let’s explore how OpsVantage Digital can help you scale with care, clarity, and confidence. No pressure—just a conversation about your vision.
+            Let’s explore how OpsVantage Digital can help you scale with care,
+            clarity, and confidence. No pressure—just a conversation about your
+            vision.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <MagneticButton as="a" href="/contact">
               Contact Us
             </MagneticButton>
-            <MagneticButton as="a" href="/booking" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+            <MagneticButton
+              as="a"
+              href="/booking"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+            >
               Book a Meeting
             </MagneticButton>
           </div>

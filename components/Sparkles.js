@@ -1,3 +1,6 @@
+// Governance Note: This component adds animated sparkles for visual delight. It supports emotional impact and brand energy.
+// Maintenance: Update animation and SVG logic as visual identity evolves. Keep code teachable and cinematic.
+// Legacy Alignment: Follows "Emotional Awareness" and "Visual Hierarchy" pillars. Comments clarify teachability and impact.
 "use client";
 import React from "react";
 import { motion } from "framer-motion";

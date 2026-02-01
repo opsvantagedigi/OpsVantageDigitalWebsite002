@@ -55,7 +55,10 @@ export default function WorkPage() {
           <Sparkles>What We’re Building</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          <Sparkles>Our vision, roadmap, and platform ambitions for the future of digital stewardship.</Sparkles>
+          <Sparkles>
+            Our vision, roadmap, and platform ambitions for the future of
+            digital stewardship.
+          </Sparkles>
         </p>
         <section className="space-y-8">
           <div>

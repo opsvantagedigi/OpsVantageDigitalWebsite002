@@ -1,10 +1,11 @@
+// Governance Note: TypeScript config for project structure and type safety. Ensures maintainable, teachable setup.
+// Maintenance: Update compiler options and paths as codebase evolves. Keep all changes commented for future maintainers.
+// Legacy Alignment: Follows "Stewardship" and "Clarity" pillars. Comments clarify teachability and governance.
 {
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     },
     "jsx": "preserve",
     "module": "esnext",
@@ -16,11 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": false,
     "noEmit": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "incremental": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -30,16 +27,8 @@
       }
     ]
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "studio"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "studio"],
   "plugins": [
     {
       "name": "next"

@@ -1,3 +1,6 @@
+// Governance Note: This component creates a magnetic button effect for interactive delight. It supports emotional engagement and brand energy.
+// Maintenance: Update animation and event logic as UI evolves. Keep code teachable and cinematic.
+// Legacy Alignment: Follows "Emotional Awareness" and "Stewardship" pillars. Comments clarify teachability and impact.
 "use client";
 import React, { useRef, useCallback } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
@@ -10,27 +13,29 @@ export default function MagneticButton({ children, className = "", ...props }) {
   const springX = useSpring(x, springConfig);
   const springY = useSpring(y, springConfig);
 
-
   // Throttle getBoundingClientRect to once per animation frame
   const frame = useRef(null);
   const lastRect = useRef(null);
-  const handleMouseMove = useCallback((e) => {
-    if (!ref.current) return;
-    if (!lastRect.current) {
-      lastRect.current = ref.current.getBoundingClientRect();
-    }
-    if (!frame.current) {
-      frame.current = requestAnimationFrame(() => {
-        frame.current = null;
-        lastRect.current = null;
-      });
-    }
-    const rect = lastRect.current;
-    const relX = e.clientX - rect.left - rect.width / 2;
-    const relY = e.clientY - rect.top - rect.height / 2;
-    x.set(relX * 0.3);
-    y.set(relY * 0.3);
-  }, [x, y]);
+  const handleMouseMove = useCallback(
+    (e) => {
+      if (!ref.current) return;
+      if (!lastRect.current) {
+        lastRect.current = ref.current.getBoundingClientRect();
+      }
+      if (!frame.current) {
+        frame.current = requestAnimationFrame(() => {
+          frame.current = null;
+          lastRect.current = null;
+        });
+      }
+      const rect = lastRect.current;
+      const relX = e.clientX - rect.left - rect.width / 2;
+      const relY = e.clientY - rect.top - rect.height / 2;
+      x.set(relX * 0.3);
+      y.set(relY * 0.3);
+    },
+    [x, y],
+  );
 
   function handleMouseLeave() {
     x.set(0);

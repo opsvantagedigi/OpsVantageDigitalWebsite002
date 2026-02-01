@@ -55,7 +55,10 @@ export default function InsightsPage() {
           <Sparkles>Insights</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          <Sparkles>Actionable digital wisdom, playbooks, and thought leadership for modern businesses.</Sparkles>
+          <Sparkles>
+            Actionable digital wisdom, playbooks, and thought leadership for
+            modern businesses.
+          </Sparkles>
         </p>
         <section className="space-y-8">
           <div>

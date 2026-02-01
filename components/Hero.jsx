@@ -1,3 +1,6 @@
+// Governance Note: This is the main hero component. It sets the visual and emotional tone for the site.
+// Maintenance: Update background, scene, and CTA logic as branding evolves. Keep all code teachable and cinematic.
+// Legacy Alignment: Follows "Cinematic" and "Emotional Awareness" pillars. Comments clarify narrative and emotional impact.
 "use client";
 
 import dynamic from "next/dynamic";
@@ -10,7 +13,6 @@ const HeroScene = dynamic(() => import("./HeroScene"), {
     <div className="h-[260px] w-full rounded-3xl bg-gradient-to-br from-sky-500/20 via-emerald-400/10 to-amber-300/10 animate-pulse" />
   ),
 });
-
 
 export default function Hero() {
   return (
@@ -27,11 +29,13 @@ export default function Hero() {
           </div>
 
           <h1 className="text-balance text-4xl font-bold tracking-tight text-white drop-shadow-lg sm:text-5xl lg:text-6xl animate-fade-in-up delay-100">
-            Build, automate, and scale your digital future—<span className="text-emerald-400">powered by OpsVantage</span>.
+            Build, automate, and scale your digital future—
+            <span className="text-emerald-400">powered by OpsVantage</span>.
           </h1>
 
           <p className="text-pretty text-lg leading-relaxed text-slate-300 sm:text-xl animate-fade-in-up delay-200">
-            From first impression to full automation, we help you own every step of your digital journey—with care, clarity, and confidence.
+            From first impression to full automation, we help you own every step
+            of your digital journey—with care, clarity, and confidence.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 animate-fade-in-up delay-300">
@@ -54,25 +58,35 @@ export default function Hero() {
           <div className="grid gap-3 text-xs text-slate-300 sm:grid-cols-2 sm:text-sm animate-fade-in-up delay-400">
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse" />
-              <p>Website design & development with governance‑grade performance and accessibility.</p>
+              <p>
+                Website design & development with governance‑grade performance
+                and accessibility.
+              </p>
             </div>
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <p>Business workflows, CRM, and operations automated end‑to‑end.</p>
+              <p>
+                Business workflows, CRM, and operations automated end‑to‑end.
+              </p>
             </div>
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-amber-300 animate-pulse" />
-              <p>AI agents embedded into your stack for support, ops, and growth.</p>
+              <p>
+                AI agents embedded into your stack for support, ops, and growth.
+              </p>
             </div>
             <div className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 rounded-full bg-fuchsia-400 animate-pulse" />
-              <p>Domains, SSL, email, and DNS provisioned and monitored for you.</p>
+              <p>
+                Domains, SSL, email, and DNS provisioned and monitored for you.
+              </p>
             </div>
           </div>
 
           {/* Trust line */}
           <p className="pt-2 text-xs text-slate-400 animate-fade-in-up delay-500">
-            Full‑service monitoring and upkeep available on subscription, or self‑managed via your OpsVantage dashboard.
+            Full‑service monitoring and upkeep available on subscription, or
+            self‑managed via your OpsVantage dashboard.
           </p>
         </div>
 

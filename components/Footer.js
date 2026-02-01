@@ -1,3 +1,6 @@
+// Governance Note: This is the global footer. It anchors the brand and provides navigation and legal links.
+// Maintenance: Update branding, links, and legal copy as business requirements change. Keep all code teachable and cinematic.
+// Legacy Alignment: Follows "Stewardship" and "Care over Exploitation" pillars. Comments clarify user safety and trust.
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";

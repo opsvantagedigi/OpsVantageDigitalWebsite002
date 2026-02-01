@@ -55,7 +55,9 @@ export default function AboutPage() {
           <Sparkles>About Us</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          <Sparkles>Where legacy, technology, and human care converge.</Sparkles>
+          <Sparkles>
+            Where legacy, technology, and human care converge.
+          </Sparkles>
         </p>
         <section className="space-y-8">
           <div>

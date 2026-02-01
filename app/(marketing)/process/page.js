@@ -55,7 +55,10 @@ export default function ProcessPage() {
           <Sparkles>Our Process</Sparkles>
         </h1>
         <p className="text-xl text-center mb-10">
-          <Sparkles>A proven, governance-grade approach to building digital systems that last.</Sparkles>
+          <Sparkles>
+            A proven, governance-grade approach to building digital systems that
+            last.
+          </Sparkles>
         </p>
         <section className="space-y-10">
           <div>

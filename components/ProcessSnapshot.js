@@ -1,3 +1,6 @@
+// Governance Note: This component visualizes the OpsVantage process. It clarifies the journey for clients and future stewards.
+// Maintenance: Update process steps and animation logic as workflows evolve. Keep code teachable and cinematic.
+// Legacy Alignment: Follows "Stewardship" and "Clarity" pillars. Comments clarify teachability and emotional safety.
 "use client";
 import React from "react";
 import { motion } from "framer-motion";

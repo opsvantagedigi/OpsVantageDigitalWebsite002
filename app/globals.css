@@ -1,3 +1,6 @@
+/* Governance Note: This file aggregates all global and branding CSS for the site. */
+/* Maintenance: Update imports and brand tokens as visual identity evolves. Comment all major changes for future maintainers. */
+/* Legacy Alignment: Follows "Visual Hierarchy" and "Stewardship" pillars. All styles are modular and teachable. */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap");
 @import "../branding/colors.css";
 @import "../branding/typography.css";
@@ -263,8 +266,6 @@ a {
   }
 }
 
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -320,8 +321,6 @@ a {
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

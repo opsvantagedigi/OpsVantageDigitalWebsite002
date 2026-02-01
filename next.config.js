@@ -1,3 +1,6 @@
+// Governance Note: Next.js config for build, environment, and source maps. Ensures maintainable, teachable setup.
+// Maintenance: Update config as build, environment, or deployment needs change. Keep all changes commented for future maintainers.
+// Legacy Alignment: Follows "Stewardship" and "Clarity" pillars. Comments clarify teachability and governance.
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // ...existing code...
@@ -31,13 +34,12 @@ const nextConfig = {
   },
 };
 
-
 // Add security headers (CSP, etc.)
-const securityHeaders = require('./next.headers.js');
+const securityHeaders = require("./next.headers.js");
 
 nextConfig.headers = async () => [
   {
-    source: '/(.*)',
+    source: "/(.*)",
     headers: securityHeaders,
   },
 ];

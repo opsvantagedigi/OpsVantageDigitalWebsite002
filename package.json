@@ -21,6 +21,8 @@
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.13.9",
     "@sentry/nextjs": "^7.120.4",
+    "@sentry/node": "^10.38.0",
+    "@vercel/analytics": "^1.6.1",
     "autoprefixer": "^10.4.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^1.2.1",
@@ -39,8 +41,12 @@
     "three-mesh-bvh": "^0.8.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@playwright/test": "^1.58.1",
     "@types/node": "^25.1.0",
+    "eslint-config-next": "^16.1.6",
+    "eslint-plugin-next": "^0.0.0",
+    "prettier": "^3.8.1",
     "source-map": "^0.7.6",
     "tailwindcss-animate": "^1.0.7",
     "vercel": "^50.9.6"

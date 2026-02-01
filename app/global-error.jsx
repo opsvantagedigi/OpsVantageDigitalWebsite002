@@ -1,3 +1,6 @@
+// Governance Note: This file handles global error boundaries for the Next.js app.
+// Maintenance: Update error handling logic as new error types emerge. Always provide user-friendly, emotionally safe messaging.
+// Legacy Alignment: Follows the "Emotional Awareness" and "Stewardship" pillars.
 "use client";
 
 import * as Sentry from "@sentry/nextjs";
